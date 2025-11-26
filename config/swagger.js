@@ -17,8 +17,6 @@ const swaggerDefinition = {
           name: { type: "string" },
           email: { type: "string" },
           avatar: { type: "string" },
-          provider: { type: "string" },
-          providerId: { type: "string" },
           role: { type: "string" }
         },
         example: {
@@ -26,8 +24,6 @@ const swaggerDefinition = {
           name: "Mohamed Gameel",
           email: "mohamed@example.com",
           avatar: "https://lh3.googleusercontent.com/...",
-          provider: "google",
-          providerId: "11223344556677889900",
           role: "caregiver"
         }
       }
