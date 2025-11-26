@@ -6,9 +6,9 @@ const client = new OAuth2Client(process.env.GOOGLE_CLIENT_ID);
 
 export const googleAuth = async (req, res) => {
   try {
-    const { idToken } = req.body;
+    const { idToken, role } = req.body;
 
-    if (!idToken) return res.status(400).json({ message: "Token missing" });
+    if (!idToken || !role) return res.status(400).json({ message: "Role or Token missing" });
 
     // 1️⃣ Verify Google token
     const ticket = await client.verifyIdToken({
@@ -30,20 +30,21 @@ export const googleAuth = async (req, res) => {
         name,
         email,
         avatar: picture,
+        role: role
       });
     }
 
     // 4️⃣ Generate JWT
     const token = jwt.sign(
-      { id: user._id },
-      process.env.JWT_SECRET,
-      { expiresIn: "7d" }
+      { id: user._id, email: user.email, role: user.role },
+      process.env.JWT_SECRET
     );
 
     res.json({
       message: "Authenticated",
       user,
       token,
+      role,
     });
 
   } catch (err) {
