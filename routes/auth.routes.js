@@ -27,9 +27,9 @@ const router = express.Router();
  *                 type: string
  *                 description: Google ID Token from Flutter Google Sign-In
  *                 example: eyJhbGciOiJSUzI1NiIsImtpZCI6Ij...
- *               role: 
+ *               role:
  *                 type: string
- *                 example: caregiver   
+ *                 example: caregiver
  *     responses:
  *       200:
  *         description: User authenticated
@@ -45,19 +45,7 @@ const router = express.Router();
  *                   type: string
  *                   example: eyJhbGciOiJIUzI1...
  *                 user:
- *                   type: object
- *                   properties:
- *                       _id:
- *                         type: string
- *                       role:
- *                         type: string
- *                       name:
- *                         type: string
- *                       email:
- *                         type: string
- *                       avatar:
- *                         type: string
- *                    
+ *                   $ref: '#/components/schemas/User'
  *       400:
  *         description: Missing or invalid token
  *       500:

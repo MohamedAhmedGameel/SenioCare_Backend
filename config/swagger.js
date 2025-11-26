@@ -1,23 +1,6 @@
 import swaggerJsdoc from "swagger-jsdoc";
 import swaggerUi from "swagger-ui-express";
 
-const options = {
-  definition: {
-    openapi: "3.0.0",
-    info: {
-      title: "SenioCare",
-      version: "1.0.0",
-      description: "An AI-Powered Smart Companion for Enhancing Elderly Health, Independence, and Quality of Life",
-    },
-    servers: [
-      {
-        url: "https://senio-care-backend.vercel.app",
-      },
-    ],
-  },
-  apis: ["./routes/*.js"], // IMPORTANT: Where Swagger should read JSDoc comments
-};
-
 const swaggerDefinition = {
   openapi: "3.0.0",
   info: {
@@ -35,7 +18,8 @@ const swaggerDefinition = {
           email: { type: "string" },
           avatar: { type: "string" },
           provider: { type: "string" },
-          providerId: { type: "string" }
+          providerId: { type: "string" },
+          role: { type: "string" }
         },
         example: {
           _id: "67a1234567bb99aa33cc22dd",
@@ -43,11 +27,17 @@ const swaggerDefinition = {
           email: "mohamed@example.com",
           avatar: "https://lh3.googleusercontent.com/...",
           provider: "google",
-          providerId: "11223344556677889900"
+          providerId: "11223344556677889900",
+          role: "caregiver"
         }
       }
     }
-  },
+  }
+};
+
+const options = {
+  definition: swaggerDefinition,
+  apis: ["./routes/*.js"], // Path to your route docs
 };
 
 export const swaggerSpec = swaggerJsdoc(options);
