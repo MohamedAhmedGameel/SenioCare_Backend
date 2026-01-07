@@ -5,7 +5,7 @@ const swaggerDefinition = {
   openapi: "3.0.0",
   info: {
     title: "SenioCare",
-    version: "1.0.0",
+    version: "1.1.0",
     description: "An AI-Powered Smart Companion for Enhancing Elderly Health, Independence, and Quality of Life",
   },
   components: {
