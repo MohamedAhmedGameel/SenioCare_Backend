@@ -7,6 +7,7 @@
  *       properties:
  *         _id:
  *           type: string
+ *           readOnly: true
  *         googleId:
  *           type: string
  *         name:

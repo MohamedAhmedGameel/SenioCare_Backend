@@ -3,6 +3,9 @@ import dotenv from "dotenv";
 import cors from "cors";
 import connectDB from "./config/db.js";
 import authRoutes from "./routes/auth.routes.js";
+import elderRoutes from "./routes/elder.routes.js";
+import caregiverRoutes from "./routes/caregiver.routes.js";
+import serviceProviderRoutes from "./routes/serviceProvider.routes.js";
 
 // swagger for api-docs
 import { swaggerSpec, swaggerUiMiddleware } from "./config/swagger.js";
@@ -37,5 +40,8 @@ app.get('/', (req, res) => {
 app.use("/api-docs", swaggerUiMiddleware.serve, swaggerUiMiddleware.setup(swaggerSpec));
 
 app.use("/auth", authRoutes);
+app.use("/elders", elderRoutes);
+app.use("/caregivers", caregiverRoutes);
+app.use("/service-providers", serviceProviderRoutes);
 // app.use("/", ()=>{return"lol"});
 app.listen(process.env.Port, () => console.log("Server running on port 5000"));
