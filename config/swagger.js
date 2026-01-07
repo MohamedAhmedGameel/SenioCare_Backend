@@ -62,7 +62,21 @@ const swaggerDefinition = {
         }
       }
     }
+    ,
+    securitySchemes: {
+      bearerAuth: {
+        type: "http",
+        scheme: "bearer",
+        bearerFormat: "JWT"
+      }
+    }
   }
+  ,
+  security: [
+    {
+      bearerAuth: []
+    }
+  ]
   ,
   paths: {
     "/elders": {

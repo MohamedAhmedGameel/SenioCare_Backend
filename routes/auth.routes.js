@@ -16,6 +16,7 @@ const router = express.Router();
  *   post:
  *     summary: Authenticate user using Google idToken (from Flutter)
  *     tags: [Authentication]
+ *     security: []
  *     requestBody:
  *       required: true
  *       content:
