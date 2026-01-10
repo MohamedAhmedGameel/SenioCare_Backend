@@ -47,4 +47,11 @@ app.use("/elders", elderRoutes);
 app.use("/caregivers", caregiverRoutes);
 app.use("/service-providers", serviceProviderRoutes);
 // app.use("/", ()=>{return"lol"});
-app.listen(process.env.Port, () => console.log("Server running on port 5000"));
+// Validate important env vars early
+if (!process.env.MONGO_URL) {
+  console.error("Missing MONGO_URL environment variable");
+  process.exit(1);
+}
+
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

@@ -14,7 +14,6 @@ export const googleAuth = async (req, res) => {
       console.error("Missing GOOGLE_CLIENT_ID in environment");
       return res.status(500).json({ message: "Server misconfiguration: missing GOOGLE_CLIENT_ID" });
     }
-    console.log("id",process.env.GOOGLE_CLIENT_ID);
     
     if (!process.env.JWT_SECRET) {
       console.error("Missing JWT_SECRET in environment");
