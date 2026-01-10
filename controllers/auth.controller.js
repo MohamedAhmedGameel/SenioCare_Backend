@@ -5,17 +5,22 @@ import User from "../models/User.js";
 const client = new OAuth2Client(process.env.GOOGLE_CLIENT_ID);
 
 export const googleAuth = async (req, res) => {
-  try {
+  
     const { idToken, role } = req.body;
-
+  
     if (!idToken || !role) return res.status(400).json({ message: "Role or Token missing" });
 
     // 1️⃣ Verify Google token
-    const ticket = await client.verifyIdToken({
+    try{
+      const ticket = await client.verifyIdToken({
       idToken,
       audience: process.env.GOOGLE_CLIENT_ID,
     });
-
+    } catch(err){
+      return res.status(400).json({ message: "Invalid Google token" });
+    }
+    
+  try {
     const payload = ticket.getPayload();
 
     // 2️⃣ Extract user info
@@ -49,6 +54,6 @@ export const googleAuth = async (req, res) => {
 
   } catch (err) {
     console.error(err);
-    res.status(500).json({ message: "Invalid Google token" });
+    res.status(500).json({ message: "Server Error" });
   }
 };
