@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+motor
+pydantic
+email-validator
+python-dotenv
+pyjwt
+google-auth
+requests
+httpx
