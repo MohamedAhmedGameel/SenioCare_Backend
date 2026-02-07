@@ -18,7 +18,19 @@ async def create_elder(elder: ElderCreate):
 @router.get("/")
 async def list_elders():
     db = get_db()
+
     pipeline = [
+        {
+            "$addFields": {
+                "caregiver_ids": {
+                    "$map": {
+                        "input": { "$ifNull": ["$caregiver_ids", []] },
+                        "as": "id",
+                        "in": { "$toObjectId": "$$id" }
+                    }
+                }
+            }
+        },
         {
             "$lookup": {
                 "from": "caregivers",
@@ -28,6 +40,7 @@ async def list_elders():
             }
         }
     ]
+
     elders = await db.elders.aggregate(pipeline).to_list(length=None)
     
     for e in elders:
@@ -43,8 +56,20 @@ async def get_elder(id: str):
         raise HTTPException(status_code=400, detail="Invalid id")
         
     db = get_db()
+
     pipeline = [
         { "$match": { "_id": ObjectId(id) } },
+        {
+            "$addFields": {
+                "caregiver_ids": {
+                    "$map": {
+                        "input": { "$ifNull": ["$caregiver_ids", []] },
+                        "as": "id",
+                        "in": { "$toObjectId": "$$id" }
+                    }
+                }
+            }
+        },
         {
             "$lookup": {
                 "from": "caregivers",
@@ -54,6 +79,7 @@ async def get_elder(id: str):
             }
         }
     ]
+
     
     result = await db.elders.aggregate(pipeline).to_list(length=1)
     

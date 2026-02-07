@@ -26,7 +26,19 @@ async def create_caregiver(caregiver: CaregiverCreate):
 async def list_caregivers():
     db = get_db()
     
+
     pipeline = [
+        {
+            "$addFields": {
+                "elder_ids": {
+                    "$map": {
+                        "input": { "$ifNull": ["$elder_ids", []] },
+                        "as": "id",
+                        "in": { "$toObjectId": "$$id" }
+                    }
+                }
+            }
+        },
         {
             "$lookup": {
                 "from": "elders",
@@ -57,8 +69,20 @@ async def get_caregiver(id: str):
         raise HTTPException(status_code=400, detail="Invalid id")
         
     db = get_db()
+
     pipeline = [
         { "$match": { "_id": ObjectId(id) } },
+        {
+            "$addFields": {
+                "elder_ids": {
+                    "$map": {
+                        "input": { "$ifNull": ["$elder_ids", []] },
+                        "as": "id",
+                        "in": { "$toObjectId": "$$id" }
+                    }
+                }
+            }
+        },
         {
             "$lookup": {
                 "from": "elders",
@@ -68,6 +92,7 @@ async def get_caregiver(id: str):
             }
         }
     ]
+
     
     result = await db.caregivers.aggregate(pipeline).to_list(length=1)
     
@@ -75,10 +100,11 @@ async def get_caregiver(id: str):
         raise HTTPException(status_code=404, detail="Not found")
         
     cg = result[0]
-    map_document(cg)
-    if "elder_ids" in cg and isinstance(cg["elder_ids"], list):
-        for elder in cg["elder_ids"]:
-            map_document(elder)
+    print(cg)
+    # map_document(cg)
+    # if "elder_ids" in cg and isinstance(cg["elder_ids"], list):
+    #     for elder in cg["elder_ids"]:
+    #         map_document(elder)
             
     return cg
 
