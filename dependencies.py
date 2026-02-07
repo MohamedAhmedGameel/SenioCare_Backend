@@ -1,17 +1,12 @@
-from fastapi import Header, HTTPException, status
+from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
+from fastapi import Depends, HTTPException, status
 import jwt
 from config import JWT_SECRET
-from typing import Optional
 
-async def get_current_user(authorization: Optional[str] = Header(None)):
-    print(authorization)
-    if not authorization or not authorization.startswith("Bearer "):
-        raise HTTPException(
-            status_code=status.HTTP_401_UNAUTHORIZED,
-            detail="Missing or invalid Authorization header"
-        )
-    
-    token = authorization.split(" ")[1]
+security = HTTPBearer()
+
+async def get_current_user(credentials: HTTPAuthorizationCredentials = Depends(security)):
+    token = credentials.credentials
     try:
         payload = jwt.decode(token, JWT_SECRET, algorithms=["HS256"])
         return payload
