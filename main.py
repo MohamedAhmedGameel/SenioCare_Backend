@@ -2,16 +2,18 @@ from fastapi import FastAPI, Depends
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import HTMLResponse
 from contextlib import asynccontextmanager
-from database import connect_db, close_db
-from routers import auth, caregiver, elder, service_provider
+from database import connect_db, close_db, connect_ai_db, close_ai_db
+from routers import auth, caregiver, elder, service_provider, disease_information, drug_information, food_information, herb_information, drug_foodherb_interaction
 from dependencies import get_current_user
 import config
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     await connect_db()
+    await connect_ai_db()
     yield
     await close_db()
+    await close_ai_db()
 
 from utils.rate_limiter import rate_limit_dependency
 
@@ -48,6 +50,39 @@ app.include_router(
     tags=["Service Providers"], 
     dependencies=[Depends(get_current_user)]
 )
+
+# DDID Database Routes (using AI database)
+app.include_router(
+    disease_information.router, 
+    prefix="/ddid/disease-information", 
+    tags=["DDID - Disease Information"], 
+    dependencies=[Depends(get_current_user)]
+)
+app.include_router(
+    drug_information.router, 
+    prefix="/ddid/drug-information", 
+    tags=["DDID - Drug Information"], 
+    dependencies=[Depends(get_current_user)]
+)
+app.include_router(
+    food_information.router, 
+    prefix="/ddid/food-information", 
+    tags=["DDID - Food Information"], 
+    dependencies=[Depends(get_current_user)]
+)
+app.include_router(
+    herb_information.router, 
+    prefix="/ddid/herb-information", 
+    tags=["DDID - Herb Information"], 
+    dependencies=[Depends(get_current_user)]
+)
+app.include_router(
+    drug_foodherb_interaction.router, 
+    prefix="/ddid/interactions", 
+    tags=["DDID - Drug-Food/Herb Interactions"], 
+    dependencies=[Depends(get_current_user)]
+)
+
 
 @app.get("/", response_class=HTMLResponse)
 async def read_root():

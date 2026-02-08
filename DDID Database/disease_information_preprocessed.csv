@@ -1,0 +1,1695 @@
+indication,state,fhdi_drug_id
+constipation icd11 dd911,approved,d00001
+inborn error of metabolism icd11 5c505c59,approved,d00002
+smoking dependence icd11 6c4a2,approved,d00006
+bleeding disorder icd11 ga20ga21,approved,d00007
+postoperative hemorrhage icd11 ne810z,approved,d00007
+infestations of lice and scabies icd11 1g00z,approved,d00008
+insomnia icd11 7a007a0z,approved,d00010
+venous thrombosis icd11 ba43,approved,d00009
+deep vein thrombosis icd11 bd71,approved,d00009
+thrombosis icd11 db61gb90,phase 3,d00009
+venous thromboembolism icd11 bd72,phase 3,d00009
+venous thrombosis icd11 ba43,approved,d01359
+deep vein thrombosis icd11 bd71,approved,d01359
+thrombosis icd11 db61gb90,phase 3,d01359
+venous thromboembolism icd11 bd72,phase 3,d01359
+venous thrombosis icd11 ba43,approved,d01360
+deep vein thrombosis icd11 bd71,approved,d01360
+thrombosis icd11 db61gb90,phase 3,d01360
+venous thromboembolism icd11 bd72,phase 3,d01360
+venous thrombosis icd11 ba43,approved,d01361
+deep vein thrombosis icd11 bd71,approved,d01361
+thrombosis icd11 db61gb90,phase 3,d01361
+venous thromboembolism icd11 bd72,phase 3,d01361
+venous thrombosis icd11 ba43,approved,d01362
+deep vein thrombosis icd11 bd71,approved,d01362
+thrombosis icd11 db61gb90,phase 3,d01362
+venous thromboembolism icd11 bd72,phase 3,d01362
+venous thrombosis icd11 ba43,approved,d01363
+deep vein thrombosis icd11 bd71,approved,d01363
+thrombosis icd11 db61gb90,phase 3,d01363
+venous thromboembolism icd11 bd72,phase 3,d01363
+mycobacterium infection icd11 1b101b21,approved,d00012
+virus infection icd11 1a241d9z,phase 2,d00014
+multiple sclerosis icd11 8a40,approved,d00015
+epilepsy icd11 8a608a68,approved,d00016
+alzheimer disease icd11 8a20,approved,d00017
+hypertension icd11 ba00ba04,approved,d00018
+pain icd11 mg30mg3z,approved,d00019
+glaucomaocular hypertension icd11 9c61,approved,d00020
+diabetic complication icd11 5a2y,approved,d00021
+urinary tract infection icd11 gc08,approved,d00022
+worm infection icd11 1f90z,approved,d00023
+benign prostatic hyperplasia icd11 ga90,approved,d00025
+irritable bowel syndrome icd11 dd910,approved,d00026
+anxiety disorder icd11 6b006b0z,approved,d00027
+epilepsy icd11 8a608a68,phase 2,d00027
+ovarian cancer icd11 2c73,approved,d00028
+influenza a virus infection icd11 1e30,approved,d00029
+myasthenia gravis icd11 8c6y,approved,d00030
+cushing disease icd11 5a70,approved,d00031
+chronic obstructive pulmonary disease icd11 ca22,approved,d00032
+tachyarrhythmias icd11 bc71,approved,d00033
+schizophrenia icd11 6a20,approved,d00034
+depression icd11 6a706a7z,approved,d00035
+hypertension icd11 ba00ba04,approved,d00036
+insomnia icd11 7a007a0z,approved,d00037
+malaria icd11 1f401f45,approved,d00038
+major depressive disorder icd11 6a703,approved,d00039
+breast cancer icd11 2c602c65,approved,d00040
+pain icd11 mg30mg3z,approved,d00043
+myocardial infarction icd11 ba41ba43,approved,d00043
+cardiovascular disease icd11 ba00be2z,phase 3,d00043
+allergic rhinitis icd11 ca080,withdrawn from market,d00044
+hypertension icd11 ba00ba04,approved,d00045
+organ transplant rejection icd11 ne84,approved,d00046
+acne vulgaris icd11 ed80,approved,d00047
+allergic conjunctivitis icd11 9a6002,approved,d00048
+multiple sclerosis icd11 8a40,approved,d00049
+fragile x syndrome icd11 ld55,phase 3,d00049
+high blood pressure icd11 ba00,approved,d00050
+gout icd11 fa25,approved,d00052
+chronicstable angina icd11 ba401,approved,d00053
+hypertension icd11 ba00ba04,approved,d00055
+urinary retention icd11 mf503,approved,d00056
+hypertension icd11 ba00ba04,approved,d00057
+prostate cancer icd11 2c820,approved,d00058
+parkinson disease icd11 8a000,approved,d00059
+constipation icd11 dd911,approved,d00060
+hypertension icd11 ba00ba04,approved,d00061
+ocular hypertension icd11 9c6101,approved,d00062
+glaucomaocular hypertension icd11 9c61,phase 3,d00062
+panic attacks icd11 mb23h,approved,d00063
+anxiety disorder icd11 6b006b0z,approved,d00063
+congestive heart failure icd11 bd10,approved,d00064
+anxiety disorder icd11 6b006b0z,approved,d00065
+myeloproliferative syndrome icd11 2a22,approved,d00066
+insomnia icd11 7a007a0z,approved,d00067
+anxiety disorder icd11 6b006b0z,approved,d00068
+headache icd11 8a808a84,approved,d00068
+orthostatic hypotension icd11 ba21,approved,d00069
+hypertension icd11 ba00ba04,approved,d00070
+cystic fibrosis icd11 ca25,phase 2,d00071
+vasomotorallergic rhinitis icd11 ca08,approved,d00075
+musculoskeletal disorder icd11 fa00fc0z,approved,d00076
+congestive heart failure icd11 bd10,approved,d00078
+rheumatoid arthritis icd11 fa20,approved,d00079
+pain icd11 mg30mg3z,phase 3,d00079
+alcohol dependence icd11 6c402,approved,d00082
+chronic lymphocytic leukaemia icd11 2a820,approved,d00083
+anxiety disorder icd11 6b006b0z,approved,d00085
+allergic rhinitis icd11 ca080,approved,d00086
+schizophrenia icd11 6a20,approved,d00087
+noninsulin dependent diabetes icd11 5a11,approved,d00088
+edema icd11 mg29,approved,d00089
+hypertension icd11 ba00ba04,approved,d00089
+acute pain icd11 mg31,approved,d00090
+intermittent claudication icd11 bd4000,approved,d00091
+acidreflux disorder icd11 da22,approved,d00092
+bacterial infection icd11 1a001c4z,approved,d00093
+grampositive bacterial infection icd11 1b741g40,approved,d00093
+cystic fibrosis icd11 ca25,phase 2,d00093
+biliary cancer icd11 2e927,phase 1,d00093
+depression icd11 6a706a7z,approved,d00094
+irritable bowel syndrome icd11 dd910,approved,d00095
+abdominal stomach pain icd11 dd914,approved,d00095
+irritable bowel syndrome icd11 dd910,approved,d00095
+abdominal stomach pain icd11 dd914,approved,d00095
+irritable bowel syndrome icd11 dd910,approved,d01364
+abdominal stomach pain icd11 dd914,approved,d01364
+irritable bowel syndrome icd11 dd910,approved,d01364
+abdominal stomach pain icd11 dd914,approved,d01364
+crohn disease icd11 dd70,approved,d00097
+mycobacterium infection icd11 1b101b21,investigative,d00097
+dysbetalipoproteinemia icd11 5c802,approved,d00099
+depression icd11 6a706a7z,approved,d00100
+epilepsy icd11 8a608a68,approved,d00101
+seizure disorder icd11 8a6z,phase 2,d00101
+hypertension icd11 ba00ba04,approved,d00102
+diabetic neuropathy icd11 8c0z,phase 3,d00102
+dementia icd11 6d806d86,approved,d00106
+depression icd11 6a706a7z,approved,d00107
+solid tumourcancer icd11 2a002f9z,approved,d00108
+rhinitis icd11 fa20,approved,d00109
+pneumocystis pneumonia icd11 ca4020,approved,d00110
+hypertension icd11 ba00ba04,approved,d00111
+hypertension icd11 ba00ba04,approved,d01365
+thalassemia icd11 3a50,approved,d00112
+attention deficit hyperactivity disorder icd11 6a05z,approved,d00113
+depression icd11 6a706a7z,approved,d00113
+attention deficit hyperactivity disorder icd11 6a05z,approved,d00114
+epilepsy icd11 8a608a68,approved,d00115
+osteoarthritis icd11 fa00fa05,approved,d00116
+chronic glaucoma icd11 9c610z,approved,d00117
+chronic glaucoma icd11 9c610z,approved,d01366
+functional bowel syndrome icd11 dd910,approved,d00118
+lymphatic filariasis icd11 1f663,approved,d00119
+pain icd11 mg30mg3z,approved,d00120
+meniere disease icd11 ab310,approved,d00121
+hypertension icd11 ba00ba04,approved,d00122
+pain icd11 mg30mg3z,withdrawn from market,d00123
+fever icd11 mg26,withdrawn from market,d00123
+ventricular arrhythmias icd11 bc71,approved,d00124
+urinary incontinence icd11 mf502,withdrawn from market,d00124
+alcohol dependence icd11 6c402,approved,d00125
+gastrointestinal disease icd11 de2z,approved,d00127
+alzheimer disease icd11 8a20,approved,d00128
+hypertension icd11 ba00ba04,approved,d00129
+morning sickness icd11 sc00,approved,d00130
+pain icd11 mg30mg3z,approved,d00131
+urinary tract infection icd11 gc08,approved,d00133
+insomnia icd11 7a007a0z,approved,d00134
+epilepsy icd11 8a608a68,approved,d00136
+complex partial seizure icd11 8a680,approved,d00137
+pagets disease icd11 fb85,approved,d00138
+pain icd11 mg30mg3z,approved,d00139
+virus infection icd11 1a241d9z,approved,d00140
+epilepsy icd11 8a608a68,approved,d00141
+hypertension icd11 ba00ba04,approved,d00142
+dravet syndrome icd11 8a6111,phase 3,d00143
+lennoxgastaut syndrome icd11 8a621,phase 3,d00143
+obesity icd11 5b81,withdrawn from market,d00143
+high cholesterol level icd11 5c800,approved,d00144
+hypertension icd11 ba00ba04,approved,d00145
+rheumatoid arthritis icd11 fa20,approved,d00146
+asthma icd11 ca23,approved,d00147
+analgesia icd11 mb408,approved,d00148
+pain icd11 mg30mg3z,phase 3,d00148
+cancer related pain icd11 mg30,phase 3,d00148
+chronic pain icd11 mg30,phase 1,d00148
+allergic rhinitis icd11 ca080,approved,d00149
+suprapubic pain icd11 mg30mg3z,approved,d00150
+nocturia icd11 mf55,approved,d00150
+urgency icd11 na,approved,d00150
+dysuria icd11 mf507,approved,d00150
+tachyarrhythmias icd11 bc71,approved,d00151
+paroxysmal atrial fibrillation icd11 bc8130,phase 1,d00151
+atrial fibrillation icd11 bc813,investigative,d00151
+bacterial infection icd11 1a001c4z,approved,d00152
+arthritis icd11 fa20,withdrawn from market,d00153
+fungal infection icd11 1f291f2f,approved,d00154
+anxiety disorder icd11 6b006b0z,approved,d00155
+psychotic disorder icd11 6a206a25,approved,d00156
+benzodiazepine overdose icd11 pc91,approved,d00157
+insomnia icd11 7a007a0z,approved,d00158
+solid tumourcancer icd11 2a002f9z,approved,d00159
+tumour icd11 2a002f9z,investigative,d00159
+colorectal cancer icd11 2b91z,investigative,d00159
+depression icd11 6a706a7z,approved,d00160
+depression icd11 6a706a7z,approved,d00160
+insomnia icd11 7a007a0z,approved,d00161
+rheumatoid arthritis icd11 fa20,approved,d00162
+schizophrenia icd11 6a20,approved,d00163
+prostate cancer icd11 2c820,approved,d00164
+athylene glycol or methanol poisoning icd11 ne61,approved,d00165
+congestive heart failure icd11 bd10,approved,d00166
+congestive heart failure icd11 bd10,approved,d01367
+complex partial seizure icd11 8a680,approved,d00167
+solid tumourcancer icd11 2a002f9z,phase 3,d00167
+pancreatitis icd11 dc31dc34,approved,d00168
+hyperlipidaemia icd11 5c80,approved,d00169
+diabetic complication icd11 5a2y,approved,d00170
+diabetic complication icd11 5a2y,approved,d01368
+diabetic complication icd11 5a2y,approved,d00171
+diabetic complication icd11 5a2y,approved,d00172
+insomnia icd11 7a007a0z,approved,d00173
+diabetic complication icd11 5a2y,approved,d00174
+stroke icd11 8b20,phase 3,d01369
+diabetic complication icd11 5a2y,approved,d00174
+stroke icd11 8b20,phase 3,d01369
+moderate and severe hypertension icd11 ba00z,approved,d00177
+schizophrenia icd11 6a20,approved,d00178
+leishmaniasis icd11 1f54,approved,d00179
+visceral leishmaniasis icd11 1f540,phase 2,d00179
+hypertension icd11 ba00ba04,approved,d00180
+hypertension icd11 ba00ba04,approved,d00181
+congestive heart failure icd11 bd10,approved,d00182
+malaria icd11 1f401f45,approved,d00183
+chronic myelogenous leukaemia icd11 2a200,approved,d00184
+anxiety disorder icd11 6b006b0z,approved,d00185
+castlemans disease icd11 4b2y,approved,d00186
+amyotrophic lateral sclerosis icd11 8b600,phase 2,d00186
+alcohol dependence icd11 6c402,phase 2,d00186
+methamphetamine dependence icd11 6c462,phase 2,d00186
+opioid dependence icd11 6c432z,phase 2,d00186
+multiple sclerosis icd11 8a40,phase 2,d00186
+pain icd11 mg30mg3z,approved,d00187
+depression icd11 6a706a7z,approved,d00188
+skin imperfections icd11 ek71,patented,d00188
+anaesthesia icd11 9a786,approved,d00189
+dysmenorrhea icd11 ga343,phase 2,d00189
+cognitive impairment icd11 6d71,approved,d00190
+friedreichs ataxia icd11 8a0310,approved,d00190
+solid tumourcancer icd11 2a002f9z,approved,d00191
+depression icd11 6a706a7z,approved,d00192
+hypertension icd11 ba00ba04,approved,d00193
+rheumatoid arthritis icd11 fa20,approved,d00194
+rheumatoid arthritis icd11 fa20,approved,d01370
+hypertension icd11 ba00ba04,approved,d00198
+depression icd11 6a706a7z,approved,d00199
+tuberculosis icd11 1b101b1z,approved,d00200
+hypertension icd11 ba00ba04,approved,d00201
+herpes simplex virus infection icd11 1f00,phase 3,d00201
+anaesthesia icd11 9a786,approved,d00202
+musculoskeletal pain icd11 mg30,approved,d00203
+pain icd11 mg30mg3z,phase 3,d00203
+migraine icd11 8a80,phase 2,d00203
+osteoarthritis icd11 fa00fa05,phase 1,d00203
+postoperative inflammation icd11 1a00ca431,approved,d00204
+allergic conjunctivitis icd11 9a6002,approved,d00205
+hypertension icd11 ba00ba04,approved,d00206
+bipolar disorder icd11 6a60,approved,d00207
+epilepsy icd11 8a608a68,approved,d00207
+arthritis icd11 fa20,approved,d00208
+multiple sclerosis icd11 8a40,approved,d00208
+hormonallyresponsive breast cancer icd11 2c602c65,approved,d00209
+bacterial infection icd11 1a001c4z,approved,d00210
+allergy icd11 4a804a85,approved,d00211
+allergic rhinitis icd11 ca080,discontinued in phase 2,d00211
+anxiety disorder icd11 6b006b0z,approved,d00212
+hypertension icd11 ba00ba04,approved,d00213
+schizophrenia icd11 6a20,approved,d00214
+major depressive disorder icd11 6a703,approved,d00217
+obesity icd11 5b81,approved,d00218
+worm infection icd11 1f90z,approved,d00220
+essential hypertension icd11 ba00,approved,d00221
+ankylosing spondylitis icd11 fa920,approved,d00222
+joint pain icd11 me82,approved,d00222
+dysmenorrhea icd11 ga343,approved,d00223
+malaria icd11 1f401f45,approved,d00224
+alzheimer disease icd11 8a20,approved,d00225
+pain icd11 mg30mg3z,approved,d00226
+malaria icd11 1f401f45,approved,d00227
+anxiety disorder icd11 6b006b0z,approved,d00227
+ischemic reperfusion injury icd11 db98b,discontinued in phase 1,d00227
+ulcerative colitis icd11 dd71,approved,d00228
+ulcerative colitis icd11 dd71,approved,d01371
+schizophrenia icd11 6a20,approved,d00229
+type2 diabetes icd11 5a11,approved,d00230
+dry cough icd11 md12,approved,d00231
+glaucomaocular hypertension icd11 9c61,approved,d00232
+musculoskeletal disorder icd11 fa00fc0z,approved,d00233
+cutaneous tcell lymphoma icd11 2b01,approved,d00234
+psoriasis vulgaris icd11 ea90,approved,d00234
+anaesthesia icd11 9a786,approved,d00235
+attention deficit hyperactivity disorder icd11 6a05z,approved,d00236
+traumatic brain injury icd11 na07z,phase 4,d00236
+insomnia icd11 7a007a0z,approved,d00237
+nausea icd11 md90,approved,d00238
+edema icd11 mg29,approved,d00239
+hypertension icd11 ba00ba04,approved,d00239
+hypertension icd11 ba00ba04,approved,d00240
+amoebiasis icd11 1a36,approved,d00241
+crohn disease icd11 dd70,phase 3,d00241
+perianal crohn disease icd11 dd704,phase 3,d00241
+cushing disease icd11 5a70,approved,d00242
+ventricular tachycardia icd11 bc71,approved,d00243
+fungal infection icd11 1f291f2f,approved,d00244
+irritability icd11 mb24,approved,d00245
+epilepsy icd11 8a608a68,phase 3,d00245
+orthostatic hypotension icd11 ba21,approved,d00246
+hypertension icd11 ba00ba04,approved,d00247
+depression icd11 6a706a7z,approved,d00248
+adrenocortical carcinoma icd11 2d11z,approved,d00249
+depression icd11 6a706a7z,approved,d00250
+skin imperfections icd11 ek71,patented,d00250
+narcolepsy icd11 7a20,approved,d00251
+bipolar disorder icd11 6a60,phase 4,d00251
+brain injury icd11 na07z,investigative,d00251
+narcolepsy icd11 7a20,approved,d00251
+bipolar disorder icd11 6a60,phase 4,d00251
+brain injury icd11 na07z,investigative,d00251
+narcolepsy icd11 7a20,approved,d01372
+bipolar disorder icd11 6a60,phase 4,d01372
+brain injury icd11 na07z,investigative,d01372
+narcolepsy icd11 7a20,approved,d01372
+bipolar disorder icd11 6a60,phase 4,d01372
+brain injury icd11 na07z,investigative,d01372
+pain icd11 mg30mg3z,approved,d00252
+pancreatitis icd11 dc31dc34,approved,d00253
+sepsis icd11 1g401g41,discontinued in phase 2,d00253
+urinary tract infection icd11 gc08,approved,d00254
+migraine icd11 8a80,approved,d00255
+major depressive disorder icd11 6a703,approved,d00256
+depression icd11 6a706a7z,withdrawn from market,d00256
+human immunodeficiency virus infection icd11 1c62,approved,d00257
+high blood pressure icd11 ba00,approved,d00258
+angina pectoris icd11 ba40,approved,d00259
+prostate cancer icd11 2c820,approved,d00260
+cerebral vasospasm icd11 ba85z,approved,d00262
+hypertension icd11 ba00ba04,approved,d00263
+epilepsy icd11 8a608a68,approved,d00264
+insomnia icd11 7a007a0z,approved,d00264
+hypertension icd11 ba00ba04,approved,d00265
+diabetic foot ulcer icd11 bd54,approved,d00266
+angina pectoris icd11 ba40,approved,d00266
+bacterial infection icd11 1a001c4z,approved,d00267
+depression icd11 6a706a7z,approved,d00268
+bacterial infection icd11 1a001c4z,approved,d00270
+gastroesophageal reflux disease icd11 da22z,approved,d00271
+chemotherapyinduced nausea icd11 md90,approved,d00272
+alcohol dependence icd11 6c402,phase 2,d00272
+parkinson disease icd11 8a000,approved,d00273
+rheumatoid arthritis icd11 fa20,approved,d00275
+hay fever icd11 ca0800,approved,d00276
+anxiety disorder icd11 6b006b0z,approved,d00277
+hypertension icd11 ba00ba04,approved,d00278
+arthritis icd11 fa20,approved,d00280
+pulmonary and extrapulmonary tuberculosis icd11 1b10z,approved,d00281
+inflammatory bowel disease icd11 dd72,approved,d00281
+attention deficit hyperactivity disorder icd11 6a05z,approved,d00282
+gastroesophageal reflux disease icd11 da22z,approved,d00283
+hypertension icd11 ba00ba04,approved,d00284
+skin imperfections icd11 ek71,patented,d00284
+muscular dystrophy icd11 8c70,patented,d00284
+attention deficit hyperactivity disorder icd11 6a05z,approved,d00285
+insomnia icd11 7a007a0z,approved,d00286
+intermittent claudication icd11 bd4000,approved,d00287
+psychiatric disorder icd11 6e8z,approved,d00288
+schizophrenia icd11 6a20,approved,d00289
+epilepsy icd11 8a608a68,approved,d00290
+analgesia icd11 mb408,withdrawn from market,d00291
+pain icd11 mg30mg3z,approved,d00292
+coagulation defect icd11 3b100,approved,d00293
+pulmonary embolism icd11 bb00,approved,d00293
+seizure disorder icd11 8a6z,approved,d00294
+obesity icd11 5b81,approved,d00295
+urea cycle disorder icd11 5c50a,phase 2,d00296
+chronic pain icd11 mg30,approved,d00297
+hypertension icd11 ba00ba04,approved,d00298
+diabetic complication icd11 5a2y,approved,d00299
+type2 diabetes icd11 5a11,phase 3,d00299
+obesity icd11 5b81,investigative,d00299
+enterobiasis icd11 1f65,approved,d00300
+ascariasis icd11 1f62,approved,d00300
+cognitive impairment icd11 6d71,approved,d00301
+peptic ulcer icd11 da61,approved,d00302
+edema icd11 mg29,approved,d00303
+hypertension icd11 ba00ba04,approved,d00303
+hypokalemia icd11 5c77,approved,d00304
+cardiac arrhythmias icd11 bc9z,approved,d00305
+anxiety disorder icd11 6b006b0z,approved,d00306
+flatworm infection icd11 1f701f86,approved,d00307
+congestive heart failure icd11 bd10,approved,d00308
+benign prostatic hyperplasia icd11 ga90,approved,d00308
+hypertension icd11 ba00ba04,approved,d00308
+pain icd11 mg30mg3z,approved,d00309
+malaria icd11 1f401f45,approved,d00310
+epilepsy icd11 8a608a68,approved,d00311
+hyperuricaemia icd11 5c55y,approved,d00312
+gout icd11 fa25,approved,d00312
+coronary artery disease icd11 ba80,approved,d00313
+ventricular arrhythmias icd11 bc71,approved,d00314
+hodgkin lymphoma icd11 2b30,approved,d00315
+asthma icd11 ca23,approved,d00316
+nausea icd11 md90,approved,d00317
+parkinson disease icd11 8a000,approved,d00318
+psychomotor agitation icd11 mb23m,approved,d00319
+nausea icd11 md90,approved,d00320
+tachyarrhythmias icd11 bc71,approved,d00321
+stomach ulcer icd11 da60z,approved,d00322
+excessive sweating icd11 ee00z,approved,d00322
+urinary incontinence icd11 mf502,approved,d00323
+migraine icd11 8a80,approved,d00324
+myasthenia gravis icd11 8c6y,approved,d00325
+allergy icd11 4a804a85,approved,d00326
+malaria icd11 1f401f45,approved,d00327
+insomnia icd11 7a007a0z,approved,d00328
+schizophrenia icd11 6a20,approved,d00329
+alcohol dependence icd11 6c402,phase 3,d00329
+bacterial infection icd11 1a001c4z,approved,d00330
+osteoporosis icd11 fb830,approved,d00331
+peptic ulcer icd11 da61,phase 3,d00332
+amyotrophic lateral sclerosis icd11 8b600,approved,d00333
+schizophrenia icd11 6a20,approved,d00334
+migraine icd11 8a80,approved,d00335
+osteoarthritis icd11 fa00fa05,approved,d00336
+parkinson disease icd11 8a000,approved,d00337
+diabetic complication icd11 5a2y,approved,d00338
+rheumatoid arthritis icd11 fa20,approved,d00339
+intractable insomnia icd11 7a00,approved,d00340
+skin burns icd11 me650,approved,d00341
+pagets disease icd11 fb85,approved,d00343
+pagets disease icd11 fb85,approved,d01374
+sinus rhythm disorder icd11 bc9y,approved,d00344
+chronic myelogenous leukaemia icd11 2a200,approved,d00345
+acute lymphoblastic leukaemia icd11 2a85,approved,d00345
+intestinal cancer icd11 2c0z,phase 3,d00345
+lung cancer icd11 2c250,phase 2,d00345
+systemic mastocytosis icd11 2a210,investigative,d00345
+cutaneous tcell lymphoma icd11 2b01,approved,d00346
+urinary tract infection icd11 gc08,approved,d00347
+rheumatoid arthritis icd11 fa20,approved,d00348
+irritable bowel syndrome icd11 dd910,approved,d00348
+gout icd11 fa25,approved,d00349
+schizophrenia icd11 6a20,approved,d00350
+migraine icd11 8a80,approved,d00352
+respiratory tract infection icd11 ca45,approved,d00353
+solid tumourcancer icd11 2a002f9z,approved,d00354
+insomnia icd11 7a007a0z,approved,d00355
+grade iv astrocytoma icd11 2a000,approved,d00356
+benign prostatic hyperplasia icd11 ga90,approved,d00357
+allergy icd11 4a804a85,withdrawn from market,d00358
+multiple myeloma icd11 2a83,approved,d00359
+nausea icd11 md90,approved,d00361
+schizophrenia icd11 6a20,approved,d00362
+breast cancer icd11 2c602c65,approved,d00363
+pain icd11 mg30mg3z,approved,d00364
+stroke icd11 8b20,approved,d00365
+cystinuria icd11 5c602,approved,d00367
+cystine urolithiasis icd11 gb70gb7z,approved,d00367
+spasm icd11 mb473,approved,d00368
+diabetic complication icd11 5a2y,approved,d00369
+noninsulin dependent diabetes icd11 5a11,approved,d00370
+rheumatoid arthritis icd11 fa20,approved,d00371
+excessive bleeding icd11 ga3002,approved,d00372
+depression icd11 6a706a7z,approved,d00373
+congestive heart failure icd11 bd10,approved,d00374
+edema icd11 mg29,approved,d00374
+hypertension icd11 ba00ba04,approved,d00374
+insomnia icd11 7a007a0z,approved,d00375
+schizophrenia icd11 6a20,approved,d00377
+dystonia icd11 8a02,approved,d00378
+parkinson disease icd11 8a000,approved,d00378
+obesity icd11 5b81,investigative,d00378
+irritable bowel syndrome icd11 dd910,approved,d00379
+pancreatic cancer icd11 2c10,approved,d00381
+epilepsy icd11 8a608a68,approved,d00381
+nausea and vomiting icd11 md90,approved,d00382
+major depressive disorder icd11 6a703,approved,d00383
+vitiligo icd11 ed630,approved,d00384
+diabetic complication icd11 5a2y,approved,d00385
+human immunodeficiency virus infection icd11 1c62,approved,d00386
+depression icd11 6a706a7z,approved,d00387
+complex partial seizure icd11 8a680,approved,d00388
+infantile spasm icd11 8a620,approved,d00388
+epilepsy icd11 8a608a68,approved,d00388
+major depressive disorder icd11 6a703,approved,d00389
+asthma icd11 ca23,approved,d00390
+insomnia icd11 7a007a0z,approved,d00391
+insomnia icd11 7a007a0z,approved,d00393
+epilepsy icd11 8a608a68,approved,d00394
+insomnia icd11 7a007a0z,approved,d00395
+rheumatoid arthritis icd11 fa20,approved,d00396
+solid tumourcancer icd11 2a002f9z,approved,d00397
+inflammation icd11 1a00ca431,approved,d00398
+congenital adrenal hyperplasia icd11 5a7101,phase 2,d00398
+solid tumourcancer icd11 2a002f9z,approved,d00399
+multiple sclerosis icd11 8a40,phase 3,d00399
+breast cancer icd11 2c602c65,approved,d00400
+hypertension icd11 ba00ba04,approved,d00401
+hypothyroidism icd11 5a00,approved,d00403
+congestive heart failure icd11 bd10,approved,d00404
+rheumatoid arthritis icd11 fa20,approved,d00406
+inflammation icd11 1a00ca431,approved,d00407
+atopic dermatitis icd11 ea80,phase 1,d00407
+eczema icd11 ea80ea89,phase 1,d00407
+menopausal and postmenopausal disorder icd11 ga30,approved,d00408
+glaucomaocular hypertension icd11 9c61,approved,d00409
+lamberteaton myasthenic syndrome icd11 8c62,approved,d00410
+hypothyroidism icd11 5a00,approved,d00411
+congestive heart failure icd11 bd10,phase 3,d00411
+bacterial infection icd11 1a001c4z,approved,d00412
+short bowel syndrome icd11 kb891,approved,d00413
+acute lymphoblastic leukaemia icd11 2a85,approved,d00414
+premature labour icd11 jb00,approved,d00416
+contraception icd11 qa21,phase 3,d00416
+parkinson disease icd11 8a000,approved,d00417
+idiopathic parkinson disease icd11 8a000z,phase 3,d00417
+sexual dysfunction icd11 ha00ha01,phase 2,d00417
+hyperkinetic movement disorder icd11 6b608,approved,d00418
+huntington disease icd11 8a0110,approved,d00418
+fecal incontinence icd11 me07,approved,d00419
+ophthalmic graves disease icd11 5a020,approved,d00419
+parkinson disease icd11 8a000,approved,d00420
+nephropathic cystinosis icd11 5c60,approved,d00422
+bacterial infection icd11 1a001c4z,approved,d00424
+hypophosphatasia icd11 5c643,approved,d00426
+acute gouty arthritis icd11 fa250,approved,d00428
+solid tumourcancer icd11 2a002f9z,approved,d00430
+solid tumourcancer icd11 2a002f9z,approved,d01375
+tuberculosis icd11 1b101b14,approved,d00431
+bacterial infection icd11 1a001c4z,approved,d00431
+obsessive compulsive disorder icd11 6b20,phase 2,d00431
+bacterial infection icd11 1a001c4z,approved,d00432
+virus infection icd11 1a241d9z,approved,d00433
+hypertension icd11 ba00ba04,approved,d00435
+breast cancer icd11 2c602c65,approved,d00436
+epileptic seizures icd11 8a618a6z,approved,d00437
+angina pectoris icd11 ba40,approved,d00438
+nausea icd11 md90,approved,d00439
+solid tumourcancer icd11 2a002f9z,approved,d00440
+spinal cord injury icd11 nd512,investigative,d00440
+allergic rhinitis icd11 ca080,approved,d00441
+anal fissure icd11 db500,approved,d00443
+angina pectoris icd11 ba40,approved,d00443
+nasal congestion icd11 md119,approved,d00444
+cough icd11 md12,approved,d00446
+headache icd11 8a808a84,approved,d00447
+pain icd11 mg30mg3z,approved,d00449
+erectile dysfunction icd11 ha011,approved,d00450
+arthritis icd11 fa20,approved,d00451
+anaesthesia icd11 9a786,approved,d00452
+asthma icd11 ca23,approved,d00454
+hormone replacement therapy icd11 8e01,approved,d00455
+bronchial asthma icd11 ca23,approved,d00457
+asthma icd11 ca23,phase 2,d00457
+myelodysplastic syndrome icd11 2a37,approved,d00458
+alzheimer disease icd11 8a20,approved,d00460
+migraine icd11 8a80,approved,d00461
+angina pectoris icd11 ba40,approved,d00462
+pain icd11 mg30mg3z,approved,d00464
+migraine icd11 8a80,approved,d00468
+nausea icd11 md90,approved,d00469
+manic depression disorder icd11 6a71,approved,d00472
+wilson disease icd11 5c6400,approved,d00473
+human immunodeficiency virus infection icd11 1c62,investigative,d00473
+common cold icd11 ca00,approved,d00474
+constipation icd11 dd911,approved,d00475
+anaesthesia icd11 9a786,approved,d00477
+chronic obstructive pulmonary disease icd11 ca22,approved,d00477
+bacterial infection icd11 1a001c4z,approved,d00478
+contraception icd11 qa21,approved,d00479
+contraception icd11 qa21,approved,d01376
+solid tumourcancer icd11 2a002f9z,approved,d00481
+kidney stone icd11 gb700z,approved,d00482
+diarrhea icd11 me051,approved,d00483
+bipolar disorder icd11 6a60,approved,d00484
+hormone replacement therapy icd11 8e01,approved,d00485
+pulmonary tuberculosis icd11 1b10z,approved,d00486
+methicillinresistant staphylococci infection icd11 1a001a09,approved,d00489
+mrsa infection icd11 1d010y,investigative,d00489
+pain icd11 mg30mg3z,approved,d00490
+congestive heart failure icd11 bd10,approved,d00492
+schizophrenia icd11 6a20,approved,d00493
+hay fever icd11 ca0800,approved,d00494
+human immunodeficiency virus infection icd11 1c62,approved,d00496
+bacterial infection icd11 1a001c4z,approved,d00497
+major depressive disorder icd11 6a703,approved,d00498
+prostate cancer icd11 2c820,patented,d00498
+allergic rhinitis icd11 ca080,approved,d00499
+pancreatic cancer icd11 2c10,approved,d00500
+diabetic complication icd11 5a2y,approved,d00500
+hairy cell leukaemia icd11 2a822,approved,d00501
+multiple sclerosis icd11 8a40,phase 3,d00501
+relapsingremitting multiple sclerosis icd11 8a400,phase 3,d00501
+infection of the upper and lower urinary tract icd11 gc08,approved,d00502
+angina pectoris icd11 ba40,approved,d00503
+bacterial infection icd11 1a001c4z,approved,d00504
+ulcerative colitis icd11 dd71,approved,d00505
+schizophrenia icd11 6a20,approved,d00506
+irondeficiency anemia icd11 3a00,approved,d00507
+human immunodeficiency virus infection icd11 1c62,approved,d00510
+virus infection icd11 1a241d9z,approved,d00511
+major depressive disorder icd11 6a703,approved,d00513
+skin imperfections icd11 ek71,patented,d00513
+chemotherapyinduced nausea icd11 md90,discontinued in phase 3,d00513
+parasitic infection icd11 1d0y1g2z,approved,d00514
+colon cancer icd11 2b90z,withdrawn from market,d00514
+obesity icd11 5b81,withdrawn from market,d00515
+allergic rhinitis icd11 ca080,approved,d00516
+autoimmune diabetes icd11 5a10,phase 2,d00517
+bacterial infection icd11 1a001c4z,approved,d00519
+hydrocephalus icd11 8d64,approved,d00520
+amoebiasis icd11 1a36,approved,d00521
+menorrhagia icd11 ga2050,approved,d00522
+breast cancer icd11 2c602c65,phase 2,d00522
+obesity icd11 5b81,approved,d00525
+opioid dependence icd11 6c432z,approved,d00526
+heroin and opiate withdrawal icd11 6c43,approved,d00526
+parkinson disease icd11 8a000,approved,d00527
+cerebral saltwasting syndrome icd11 5c72,approved,d00528
+primary biliary cirrhosis icd11 db961,approved,d00529
+chagas disease icd11 if53,approved,d00530
+trypanosomiasis icd11 1d511f53,approved,d00530
+solid tumourcancer icd11 2a002f9z,approved,d00531
+hepatocellular carcinoma icd11 2c1202,phase 3,d00531
+breast cancer icd11 2c602c65,phase 2,d00531
+tumour icd11 2a002f9z,investigative,d00531
+bacterial infection icd11 1a001c4z,approved,d00532
+bacterial infection icd11 1a001c4z,approved,d00533
+pain icd11 mg30mg3z,approved,d00534
+epilepsy icd11 8a608a68,approved,d00535
+parkinson disease icd11 8a000,approved,d00537
+hepatic fibrosis icd11 db930,approved,d00538
+cerebrovascular ischaemia icd11 8b1z,phase 4,d00538
+major depressive disorder icd11 6a703,withdrawn from market,d00539
+human immunodeficiency virus infection icd11 1c62,approved,d00540
+virus infection icd11 1a241d9z,investigative,d00540
+bacterial infection icd11 1a001c4z,approved,d00541
+solid tumourcancer icd11 2a002f9z,approved,d00543
+malaria icd11 1f401f45,approved,d00544
+hepatitis c virus infection icd11 1e511,approved,d00545
+painful bladder syndrome icd11 mg3050,approved,d00546
+interstitial cystitis icd11 gc003,approved,d00546
+bacterial infection icd11 1a001c4z,approved,d00547
+hypertension icd11 ba00ba04,approved,d00548
+hyperlipidaemia icd11 5c80,approved,d00549
+high blood pressure icd11 ba00,approved,d00550
+hypertension icd11 ba00ba04,approved,d00551
+ankylosing spondylitis icd11 fa920,approved,d00552
+idiopathic pulmonary fibrosis icd11 cb034,approved,d00553
+irritable bowel syndrome icd11 dd910,phase 3,d00554
+acute lymphoblastic leukaemia icd11 2a85,approved,d00555
+diarrhea icd11 me051,approved,d00556
+analgesia icd11 mb408,approved,d00557
+diabetic complication icd11 5a2y,approved,d00558
+cardiovascular disease icd11 ba00be2z,phase 3,d00558
+depression icd11 6a706a7z,approved,d00560
+hypertension icd11 ba00ba04,approved,d00561
+bacterial infection icd11 1a001c4z,approved,d00562
+parkinson disease icd11 8a000,approved,d00564
+bacterial infection icd11 1a001c4z,approved,d00565
+helminth infection icd11 1f900,approved,d00566
+bacterial infection icd11 1a001c4z,approved,d00567
+anaesthesia icd11 9a786,approved,d00568
+type 1 gaucher disease icd11 5c560y,approved,d00569
+bacterial infection icd11 1a001c4z,approved,d00570
+hypercholesterolaemia icd11 5c800,approved,d00571
+cardiovascular disease icd11 ba00be2z,phase 3,d00571
+hypercholesterolaemia icd11 5c800,approved,d00572
+inflammatory bowel disease icd11 dd72,approved,d00573
+hypercholesterolaemia icd11 5c800,approved,d00574
+hyperprolactinaemia icd11 5a601,approved,d00575
+attention deficit hyperactivity disorder icd11 6a05z,approved,d00576
+hypertension icd11 ba00ba04,approved,d00577
+hypertension icd11 ba00ba04,approved,d00577
+hypertension icd11 ba00ba04,approved,d01378
+hypertension icd11 ba00ba04,approved,d01378
+cushing disease icd11 5a70,approved,d00578
+fungal infection icd11 1f291f2f,approved,d00579
+hypertension icd11 ba00ba04,approved,d00580
+congestive heart failure icd11 bd10,approved,d00581
+epilepsy icd11 8a608a68,approved,d00582
+chronicstable angina icd11 ba401,approved,d00583
+paroxysmal atrial fibrillation icd11 bc8130,phase 2,d00583
+benign prostatic hyperplasia icd11 ga90,approved,d00584
+skin cancer icd11 2c302c37,approved,d00585
+hormonallyresponsive breast cancer icd11 2c602c65,approved,d00586
+bacterial infection icd11 1a001c4z,approved,d00587
+asthma icd11 ca23,approved,d00588
+thrombosis icd11 db61gb90,approved,d00589
+thrombosis icd11 db61gb90,approved,d00589
+epilepsy icd11 8a608a68,approved,d00590
+anxiety disorder icd11 6b006b0z,phase 2,d00590
+ovarian cancer icd11 2c73,approved,d00591
+solid tumourcancer icd11 2a002f9z,approved,d00591
+smallcell lung cancer icd11 2c25y,phase 1,d00591
+rheumatoid arthritis icd11 fa20,phase 3,d00592
+postoperative inflammation icd11 1a00ca431,approved,d00593
+inflammation icd11 1a00ca431,withdrawn from market,d00593
+solid tumourcancer icd11 2a002f9z,approved,d00594
+schizophrenia icd11 6a20,approved,d00595
+erythropoietic porphyrias icd11 5c5812,approved,d00595
+major depressive disorder icd11 6a703,phase 3,d00595
+bipolar disorder icd11 6a60,application submitted,d00595
+anaesthesia icd11 9a786,approved,d00596
+cardiovascular disease icd11 ba00be2z,approved,d00597
+chronic hbv infection icd11 1e510z,approved,d00598
+human immunodeficiency virus infection icd11 1c62,approved,d00598
+human immunodeficiency virus1 infection icd11 1c62,approved,d00598
+depression icd11 6a706a7z,approved,d00599
+colorectal cancer icd11 2b91z,approved,d00600
+hypertension icd11 ba00ba04,approved,d00601
+osteoporosis icd11 fb830,approved,d00602
+schizophrenia icd11 6a20,approved,d00603
+migraine icd11 8a80,approved,d00604
+hepatitis b virus infection icd11 1e510,approved,d00605
+human immunodeficiency virus infection icd11 1c62,approved,d00606
+hepatitis virus infection icd11 1e501e51,approved,d00606
+hepatitis b virus infection icd11 1e510,phase 3,d00606
+osteoporosis icd11 fb830,approved,d00607
+osteoporosis icd11 fb830,approved,d01379
+colorectal cancer icd11 2b91z,approved,d00608
+breast cancer icd11 2c602c65,phase 3,d00608
+paroxysmal supraventricular tachycardia icd11 bc81z,approved,d00609
+chronic kidney disease icd11 gb61,approved,d00610
+primary hypercholesterolemia icd11 5c8000,approved,d00612
+schizophrenia icd11 6a20,approved,d00613
+bacterial infection icd11 1a001c4z,approved,d00614
+human immunodeficiency virus infection icd11 1c62,approved,d00615
+cardiovascular disease icd11 ba00be2z,approved,d00617
+cardiovascular disease icd11 ba00be2z,approved,d00617
+cardiovascular disease icd11 ba00be2z,approved,d01380
+cardiovascular disease icd11 ba00be2z,approved,d01380
+human immunodeficiency virus infection icd11 1c62,approved,d00618
+influenza virus infection icd11 1e301e32,approved,d00619
+hypogonadism icd11 5a610,approved,d00620
+depression icd11 6a706a7z,approved,d00621
+hypertension icd11 ba00ba04,approved,d00622
+allergic rhinitis icd11 ca080,approved,d00623
+diabetic complication icd11 5a2y,approved,d00624
+hypertension icd11 ba00ba04,approved,d00625
+obesity icd11 5b81,withdrawn from market,d00626
+depression icd11 6a706a7z,approved,d00627
+crohn disease icd11 dd70,approved,d00628
+hypertension icd11 ba00ba04,approved,d00629
+trypanosomiasis icd11 1d511f53,phase 23,d00631
+major depressive disorder icd11 6a703,approved,d00633
+contraception icd11 qa21,approved,d00634
+malaria icd11 1f401f45,approved,d00635
+longchain fatty acid oxidation disorder icd11 bc4310,approved,d00637
+genetic epileptic syndromes with variable age of onset icd11 8a614y,phase 3,d00637
+alcohol dependence icd11 6c402,approved,d00638
+hypertension icd11 ba00ba04,approved,d00639
+sinus rhythm disorder icd11 bc9y,approved,d00640
+premature ejaculation icd11 ha030z,phase 4,d00641
+schizophrenia icd11 6a20,approved,d00642
+invasive aspergillosis icd11 1f200,approved,d00645
+inflammation icd11 1a00ca431,approved,d00646
+bacterial vaginosis icd11 mf3a,approved,d00647
+amoebiasis icd11 1a36,approved,d00647
+chronic bronchitis icd11 ca201,approved,d00649
+bacterial infection icd11 1a001c4z,withdrawn from market,d00649
+fungal infection icd11 1f291f2f,approved,d00650
+alzheimer disease icd11 8a20,approved,d00651
+migraine icd11 8a80,approved,d00652
+migraine icd11 8a80,approved,d00653
+cutaneous tcell lymphoma icd11 2b01,approved,d00654
+bacterial infection icd11 1a001c4z,approved,d00656
+nicotine dependence icd11 6c4a2,approved,d00658
+tobacco dependence icd11 6c4a2,clinical trial,d00658
+hypertension icd11 ba00ba04,approved,d00659
+diabetic complication icd11 5a2y icd9 2535 5881,approved,d00660
+thrombosis icd11 db61gb90,approved,d00661
+human immunodeficiency virus infection icd11 1c62,approved,d00662
+neurogenic orthostatic hypotension icd11 8d870y,approved,d00664
+bacterial infection icd11 1a001c4z,approved,d00665
+pulmonary arterial hypertension icd11 bb010,approved,d00666
+hypertension icd11 ba00ba04,approved,d00667
+primary progressive multiple sclerosis icd11 8a401,approved,d00668
+solid tumourcancer icd11 2a002f9z,approved,d00669
+ovarian cancer icd11 2c73,phase 3,d00669
+erectile dysfunction icd11 ha011,approved,d00671
+urinary tract infection icd11 gc08,approved,d00672
+schizophrenia icd11 6a20,approved,d00673
+hereditary tyrosinemia type 1 icd11 5c5011,approved,d00674
+plasmodium vivax malaria icd11 1f41,approved,d00675
+malaria icd11 1f401f45,approved,d00675
+acute lymphoblastic leukaemia icd11 2a85,approved,d00676
+myelodysplastic syndrome icd11 2a37,approved,d00676
+parkinson disease icd11 8a000,approved,d00677
+osteoarthritis icd11 fa00fa05,approved,d00678
+acute hyperammonaemia icd11 5c50a,approved,d00679
+malaria icd11 1f401f45,approved,d00681
+rheumatoid arthritis icd11 fa20,approved,d00683
+allergic rhinitis icd11 ca080,approved,d00684
+major depressive disorder icd11 6a703,approved,d00686
+menopause symptom icd11 ga300,phase 3,d00686
+schizophrenia icd11 6a20,phase 3,d00687
+leukaemia icd11 2a602b33,approved,d00688
+solid tumourcancer icd11 2a002f9z,phase 3,d00688
+proliferative vitreoretinopathy icd11 9b782,phase 3,d00688
+rheumatoid arthritis icd11 fa20,phase 1,d00688
+prostate cancer icd11 2c820,investigative,d00688
+benign prostatic hyperplasia icd11 ga90,approved,d00689
+seizure disorder icd11 8a6z,approved,d00690
+pediatric lennoxgastaut syndrome icd11 8a621,approved,d00690
+epilepsy icd11 8a608a68,approved orphan drug,d00690
+high blood pressure icd11 ba00,approved,d00691
+human immunodeficiency virus infection icd11 1c62,approved,d00692
+parkinson disease icd11 8a000,approved,d00693
+idiopathic parkinson disease icd11 8a000z,phase 3,d00693
+prostate cancer icd11 2c820,approved,d00694
+angina pectoris icd11 ba40,approved,d00695
+hyperuricaemia icd11 5c55y,approved,d00697
+systemic sclerosis icd11 4a42,approved,d00698
+major depressive disorder icd11 6a703,approved,d00699
+solid tumourcancer icd11 2a002f9z,approved,d00700
+human immunodeficiency virus infection icd11 1c62,approved,d00701
+hutchinsongilford progeria syndrome icd11 ld2b,approved,d00702
+myelodysplastic syndrome icd11 2a37,phase 3,d00702
+hepatitis d virus infection icd11 1e512,phase 2,d00702
+nonsmallcell lung cancer icd11 2c25y,discontinued in phase 3,d00702
+bacterial infection icd11 1a001c4z,approved,d00703
+hypercholesterolaemia icd11 5c800,approved,d00704
+knee osteoarthritis icd11 fa01,approved,d00705
+bacterial infection icd11 1a001c4z,approved,d00706
+hypertension icd11 ba00ba04,approved,d00707
+overactive bladder icd11 gc500,approved,d00708
+osteopetrosis icd11 ld2410,approved,d00710
+gastrointestinal disease icd11 de2z,approved,d00711
+rheumatoid arthritis icd11 fa20,phase 2,d00712
+thrombosis icd11 db61gb90,phase 3,d00713
+myocardial infarction icd11 ba41ba43,phase 3,d00713
+osteoarthritis icd11 fa00fa05,approved,d00714
+pain icd11 mg30mg3z,phase 2,d00714
+endometriosis icd11 ga10,investigative,d00714
+hyperparathyroidism icd11 5a51,approved,d00715
+kidney disease icd11 gc2z,phase 3,d00715
+liver disease icd11 db90bd99,approved,d00716
+chronic idiopathic constipation icd11 dc32,approved,d00717
+hepatitis b virus infection icd11 1e510,approved,d00718
+hypercholesterolaemia icd11 5c800,approved,d00719
+allergic rhinitis icd11 ca080,approved,d00720
+intestinal amebiasis icd11 1a36,approved,d00721
+hypophosphatasia icd11 5c643,approved,d00722
+irondeficiency anemia icd11 3a00,approved,d00723
+onychomycosis icd11 ee121,phase 3,d00723
+smoking dependence icd11 6c4a2,approved,d00724
+organophosphate poisoning icd11 ne6z,approved,d00726
+poison intoxication icd11 ne6z,phase 1,d00726
+fabry disease icd11 5c5601,approved,d00727
+nonsmallcell lung cancer icd11 2c25y,approved,d00728
+pancreatic cancer icd11 2c10,phase 3,d00728
+colon cancer icd11 2b90z,phase 2,d00728
+depression icd11 6a706a7z,phase 3,d00730
+duchenne dystrophy icd11 8c70,approved,d00733
+chronic obstructive pulmonary disease icd11 ca22,approved,d00734
+human immunodeficiency virus1 infection icd11 1c62,approved,d00735
+angina pectoris icd11 ba40,approved,d00736
+atrial fibrillation icd11 bc813,withdrawn from market,d00736
+insomnia icd11 7a007a0z,approved,d00737
+circadian rhythm sleep disorder icd11 7a607a65,terminated,d00737
+breast cancer icd11 2c602c65,approved,d00738
+human immunodeficiency virus infection icd11 1c62,approved,d00739
+human immunodeficiency virus1 infection icd11 1c62,phase 3,d00739
+stroke icd11 8b20,approved,d00741
+hyponatraemia icd11 5c72,approved,d00743
+heart failure icd11 bd10bd13,phase 3,d00743
+renal cell carcinoma icd11 2c90,approved,d00744
+hepatocellular carcinoma icd11 2c1202,phase 3,d00744
+myelodysplastic syndrome icd11 2a37,phase 2,d00744
+multiple myeloma icd11 2a83,approved,d00745
+radionuclide imaging icd11 na,approved,d00746
+convulsion icd11 8a68z,approved,d00747
+epilepsy icd11 8a608a68,approved,d00747
+diabetic neuropathy icd11 8c0z,phase 3,d00747
+synthesis disorder icd11 5c525c59,approved,d00749
+peroxisomal disorder icd11 5c57,approved,d00749
+prostate cancer icd11 2c820,approved,d00750
+multiple myeloma icd11 2a83,approved,d00751
+mantle cell lymphoma icd11 2a855,approved,d00751
+nonhodgkin lymphoma icd11 2b335,phase 3,d00751
+human immunodeficiency virus infection icd11 1c62,approved,d00752
+ovarian cancer icd11 2c73,approved,d00753
+ringworm infection icd11 1f28,approved,d00754
+heart failure icd11 bd10bd13,approved,d00755
+arrhythmia icd11 bc9z,approved,d00755
+congestive cardiac insufficiency icd11 bd1z,approved,d00755
+human immunodeficiency virus infection icd11 1c62,approved,d00756
+pain icd11 mg30mg3z,approved,d00757
+human immunodeficiency virus infection icd11 1c62,approved,d00758
+diabetic complication icd11 5a2y,approved,d00759
+pheochromocytoma icd11 5a75,approved,d00761
+bacterial infection icd11 1a001c4z,approved,d00762
+bacterial infection icd11 1a001c4z,approved,d00763
+heart failure icd11 bd10bd13,approved,d00765
+overactive bladder icd11 gc500,approved,d00766
+anabolic metabolism icd11 5c505c8z,approved,d00767
+overactive bladder icd11 gc500,approved,d00768
+acne vulgaris icd11 ed80,approved,d00769
+acute promyelocytic leukaemia icd11 2a600,approved,d00769
+organ transplant rejection icd11 ne84,approved,d00770
+ocular allergy icd11 4a81,phase 3,d00770
+hypercholesterolaemia icd11 5c800,approved,d00772
+hyperlipidaemia icd11 5c80,approved,d00773
+multiple myeloma icd11 2a83,phase 12,d00773
+hypercholesterolaemia icd11 5c800,approved,d00774
+elevated creactive protein icd11 ma1415,phase 3,d00774
+hypercholesterolaemia icd11 5c800,approved,d00774
+elevated creactive protein icd11 ma1415,phase 3,d00774
+hypercholesterolaemia icd11 5c800,approved,d01381
+elevated creactive protein icd11 ma1415,phase 3,d01381
+hypercholesterolaemia icd11 5c800,approved,d01381
+elevated creactive protein icd11 ma1415,phase 3,d01381
+crohn disease icd11 dd70,approved,d00775
+middle east respiratory syndrome mers icd11 1d64,investigative,d00775
+coronavirus disease 2019 covid19 icd11 1d6y,investigative,d00775
+acne vulgaris icd11 ed80,approved,d00776
+bacterial infection icd11 1a001c4z,approved,d00777
+primary biliary cholangitis icd11 db961,approved,d00779
+insomnia icd11 7a007a0z,clinical trial,d00779
+acromegaly icd11 5a600,approved,d00780
+acute cardiac ischemic events icd11 ba40z,approved,d00781
+kaposi sarcoma icd11 2b57,approved,d00782
+asthma icd11 ca23,approved,d00783
+type2 diabetes icd11 5a11,phase 1,d00783
+chronic obstructive pulmonary disease icd11 ca22,withdrawn from market,d00783
+atopic dermatitis icd11 ea80,discontinued in phase 2,d00783
+myelodysplastic syndrome icd11 2a37,approved,d00784
+tuberculosis icd11 1b101b14,approved,d00785
+mycobacterium infection icd11 1b101b21,phase 3,d00785
+fungal infection icd11 1f291f2f,approved,d00786
+microorganisms infection icd11 1a001a09,approved,d00787
+multiple myeloma icd11 2a83,approved,d00788
+intrahepatic cholangiocarcinoma icd11 2c1210,phase 3,d00788
+escherichia coli infection icd11 1a03,phase 2,d00789
+human immunodeficiency virus infection icd11 1c62,approved,d00790
+aspergillosis icd11 1f20,approved,d00791
+cytomegalovirus infection icd11 1d82,phase 3,d00792
+metabolic acidosis icd11 5c73,approved,d00795
+alzheimer disease icd11 8a20,approved,d00798
+venous thrombosis icd11 ba43,approved,d00801
+central nervous system disease icd11 8a048d87,approved,d00803
+lennoxgastaut syndrome icd11 8a621,approved,d00806
+dravet syndrome icd11 8a6111,approved,d00806
+infantile spasm icd11 8a620,phase 3,d00806
+epilepsy icd11 8a608a68,phase 2,d00806
+pain icd11 mg30mg3z,approved,d00807
+psychiatric disorder icd11 6e8z,phase 3,d00807
+migraine icd11 8a80,phase 2,d00807
+chronic myelogenous leukaemia icd11 2a200,approved,d00808
+cough icd11 md12,approved,d00809
+fibromyalgia icd11 mg3001,approved,d00810
+haematological malignancy icd11 2b33y,approved,d00811
+hyperthyroidism icd11 5a02,approved,d00812
+psychotic disorder icd11 6a206a25,approved,d00813
+depression icd11 6a706a7z,approved,d00814
+acute lymphoblastic leukaemia icd11 2a85,approved,d00815
+crohn disease icd11 dd70,phase 4,d00815
+orthostatic hypotension icd11 ba21,approved,d00817
+migraine icd11 8a80,approved,d00818
+schizophrenia icd11 6a20,approved,d00819
+insomnia icd11 7a007a0z,approved,d00820
+rheumatoid arthritis icd11 fa20,approved,d00822
+female infertility icd11 ga31z,approved,d00823
+fungal infection icd11 1f291f2f,approved,d00824
+onychomycosis icd11 ee121,phase 2,d00824
+thllium and radioactive isotopes of caesium poisoning icd11 ne61,approved,d00826
+metal intoxication icd11 ne60,approved,d00826
+metal intoxication icd11 ne60,approved,d00827
+heart failure icd11 bd10bd13,approved,d00828
+arrhythmia icd11 bc9z,approved,d00828
+congestive cardiac insufficiency icd11 bd1z,approved,d00828
+breast cancer icd11 2c602c65,approved,d00829
+tuberculosis icd11 1b101b1z,approved,d00830
+bacterial infection icd11 1a001c4z,approved,d00831
+mrsa infection icd11 1d010y,phase 3,d00831
+addictive disorder icd11 6c506c5z,approved,d00832
+nausea icd11 md90,approved,d00832
+anaesthesia icd11 9a786,approved,d00834
+peptic ulcer icd11 da61,approved,d00836
+bacterial infection icd11 1a001c4z,approved,d00837
+human immunodeficiency virus infection icd11 1c62,approved,d00838
+chronic obstructive pulmonary disease icd11 ca22,phase 3,d00838
+breast cancer icd11 2c602c65,approved,d00839
+hepatitis c virus infection icd11 1e511,approved,d00840
+muscle spasm icd11 mb473,approved,d00841
+acidreflux disorder icd11 da22,approved,d00842
+nausea icd11 md90,approved,d00843
+obesity icd11 5b81,approved,d00844
+malaria icd11 1f401f45,approved,d00845
+malaria icd11 1f401f45,approved,d01382
+dyspareunia icd11 ga12,approved,d00846
+postmenopausal vaginal atrophy icd11 ga302,phase 3,d00846
+schizophrenia icd11 6a20,approved,d00847
+parkinson disease icd11 8a000,approved,d00849
+skin cancer icd11 2c302c37,patented,d00849
+skin imperfections icd11 ek71,patented,d00849
+chronic myelogenous leukaemia icd11 2a200,approved,d00850
+multiple myeloma icd11 2a83,phase 2,d00850
+solid tumourcancer icd11 2a002f9z,approved,d00851
+thrombosis icd11 db61gb90,discontinued in phase 3,d00852
+hyperprolactinaemia icd11 5a601,approved,d00856
+influenza virus infection icd11 1e301e32,phase 2,d00858
+coronavirus disease 2019 covid19 icd11 1d6y,investigative,d00858
+constipation icd11 dd911,approved,d00859
+thrombosis icd11 db61gb90,approved,d00860
+type2 diabetes icd11 5a11,approved,d00861
+peripheral arterial disease icd11 bd4z,phase 12,d00861
+parkinson disease icd11 8a000,approved,d00862
+human immunodeficiency virus infection icd11 1c62,approved,d00863
+asthma icd11 ca23,approved,d00867
+bacterial infection icd11 1a001c4z,approved,d00868
+hypertension icd11 ba00ba04,approved,d00869
+asthma icd11 ca23,approved,d00870
+type2 diabetes icd11 5a11,approved,d00871
+alzheimer disease icd11 8a20,phase 3,d00871
+rhinitis icd11 fa20,approved,d00872
+insomnia icd11 7a007a0z,approved,d00873
+organ transplant rejection icd11 ne84,approved,d00874
+pemphigus vulgaris icd11 eb40,phase 3,d00874
+immune system disease icd11 4a014b41,investigative,d00874
+parkinson disease icd11 8a000,approved,d00875
+hyperparathyroidism icd11 5a51,approved,d00876
+chronic kidney disease icd11 gb61,approved,d00877
+influenza virus infection icd11 1e301e32,phase 2,d00879
+hemorrhoids icd11 db60,approved,d00880
+chronic bronchitis icd11 ca201,approved,d00884
+keratosis icd11 ed56,approved,d00885
+acne vulgaris icd11 ed80,approved,d00886
+medical abortion icd11 ja001z,approved,d00887
+pulmonary hypertension icd11 bb01,approved,d00888
+pulmonary hypertension icd11 bb01,phase 4,d00889
+hay fever icd11 ca0800,approved,d00890
+coronavirus disease 2019 covid19 icd11 1d6y,phase 23,d00892
+pain icd11 mg30mg3z,approved,d00893
+cough icd11 md12,phase 1,d00893
+psoriasis vulgaris icd11 ea90,approved,d00895
+prostate cancer icd11 2c820,approved,d00896
+cancer related pain icd11 mg30,phase 4,d00897
+angina pectoris icd11 ba40,approved,d00898
+nausea and vomiting icd11 md90,approved,d00899
+pain icd11 mg30mg3z,approved,d00900
+pain icd11 mg30mg3z,approved,d00901
+chronic pain icd11 mg30,phase 3,d00901
+fibromyalgia icd11 mg3001,approved,d00902
+epilepsy icd11 8a608a68,approved,d00902
+bacterial infection icd11 1a001c4z,approved,d00903
+insomnia icd11 7a007a0z,approved,d00904
+opioid dependence icd11 6c432z,approved,d00905
+opioid dependence icd11 6c432z,approved,d01383
+narcotic depression icd11 6a7z,approved,d00906
+respiratory depression icd11 md115,phase 3,d00906
+pruritus icd11 ec90,phase 3,d00906
+opioid dependence icd11 6c432z,phase 1,d00906
+pain icd11 mg30mg3z,approved,d00907
+back pain icd11 me84z,phase 3,d00907
+pain icd11 mg30mg3z,approved,d00908
+organ transplant rejection icd11 ne84,approved,d00909
+multiple myeloma icd11 2a83,approved,d00909
+dutch elm disease icd11 8d64,phase 12,d00909
+alcohol dependence icd11 6c402,approved,d00910
+epilepsy icd11 8a608a68,approved,d00910
+seizure disorder icd11 8a6z,investigative,d00910
+spasm icd11 mb473,approved,d00911
+overactive bladder icd11 gc500,approved,d00911
+chronic pain icd11 mg30,approved,d00912
+obesity icd11 5b81,approved,d00913
+parkinson disease icd11 8a000,approved,d00914
+substance use disorder icd11 6c4z,phase 1,d00914
+pulmonary arterial hypertension icd11 bb010,approved,d00915
+pain icd11 mg30mg3z,approved,d00916
+prurigo nodularis icd11 ec910,phase 23,d00916
+uremic pruritus icd11 ec9010,phase 23,d00916
+diabetic complication icd11 5a2y,approved,d00917
+hypertension icd11 ba00ba04,approved,d00918
+dravet syndrome icd11 8a6111,approved,d00919
+epilepsy icd11 8a608a68,approved,d00919
+solid tumourcancer icd11 2a002f9z,approved,d00920
+breast cancer icd11 2c602c65,phase 2,d00921
+schizophrenia icd11 6a20,approved,d00922
+benign prostatic hyperplasia icd11 ga90,approved,d00923
+depression icd11 6a706a7z,approved,d00924
+breast cancer icd11 2c602c65,approved,d00925
+gastrointestinal stromal tumour icd11 2b5b,approved,d00926
+gastrointestinal cancer icd11 2c11,approved,d00926
+breast cancer icd11 2c602c65,approved,d00927
+solid tumourcancer icd11 2a002f9z,phase 2,d00927
+schizophrenia icd11 6a20,terminated,d00927
+breast cancer icd11 2c602c65,approved,d00927
+solid tumourcancer icd11 2a002f9z,phase 2,d00927
+schizophrenia icd11 6a20,terminated,d00927
+breast cancer icd11 2c602c65,approved,d01384
+solid tumourcancer icd11 2a002f9z,phase 2,d01384
+schizophrenia icd11 6a20,terminated,d01384
+breast cancer icd11 2c602c65,approved,d01384
+solid tumourcancer icd11 2a002f9z,phase 2,d01384
+schizophrenia icd11 6a20,terminated,d01384
+cutaneous tcell lymphoma icd11 2b01,approved,d00928
+renal cell carcinoma icd11 2c90,phase 3,d00928
+peripheral tcell lymphoma icd11 2a90c,phase 3,d00928
+pain icd11 mg30mg3z,approved,d00929
+ischemic stroke icd11 8b115z,terminated,d00929
+alcohol dependence icd11 6c402,approved,d00931
+human immunodeficiency virus infection icd11 1c62,phase 4,d00931
+cough icd11 md12,approved,d00932
+pain icd11 mg30mg3z,approved,d00933
+opioidinduced constipation icd11 db321,approved,d00934
+obesity icd11 5b81,preclinical,d00934
+bacterial infection icd11 1a001c4z,approved,d00935
+hypertension icd11 ba00ba04,approved,d00936
+hypertension icd11 ba00ba04,approved,d00937
+congestive heart failure icd11 bd10,approved,d00938
+human immunodeficiency virus infection icd11 1c62,approved,d00939
+multidrug resistant tuberculosis icd11 mg5200,approved,d00940
+hypertension icd11 ba00ba04,approved,d00941
+nausea and vomiting icd11 md90,approved,d00942
+osteoporosis icd11 fb830,approved,d00943
+hypokalemia icd11 5c77,approved,d00945
+ischemic stroke icd11 8b115z,approved,d00946
+acute bronchitis icd11 ca42,approved,d00948
+bacterial infection icd11 1a001c4z,approved,d00949
+hypertension icd11 ba00ba04,approved,d00950
+chronic obstructive pulmonary disease icd11 ca22,approved,d00951
+chronic obstructive pulmonary disease icd11 ca22,approved,d00952
+gastrointestinal disease icd11 de2z,approved,d00953
+hypertension icd11 ba00ba04,approved,d00954
+angina pectoris icd11 ba40,discontinued in phase 3,d00955
+peptic ulcer icd11 da61,approved,d00956
+solid tumourcancer icd11 2a002f9z,approved,d00957
+osteosarcoma icd11 2b51,phase 2,d00957
+blood brain barrier icd11 5c615,approved,d00959
+malaria icd11 1f401f45,approved,d00960
+intestinal strongyloidiasis due to nematode parasite icd11 1f6b,approved,d00961
+diarrhea icd11 me051,approved,d00963
+infectious disease icd11 1a00ca431,phase 3,d00963
+bacterial infection icd11 1a001c4z,approved,d00965
+nausea icd11 md90,approved,d00966
+discovery agent icd11 na,approved,d00967
+dyspepsia icd11 md92,approved,d00969
+bacterial infection icd11 1a001c4z,approved,d00970
+malaria icd11 1f401f45,approved,d00971
+renal cell carcinoma icd11 2c90,approved,d00972
+kidney cancer icd11 2c900,phase 3,d00972
+breast cancer icd11 2c602c65,approved,d00973
+renal cell carcinoma icd11 2c90,approved,d00974
+chemotherapyinduced nausea icd11 md90,phase 3,d00975
+human immunodeficiency virus infection icd11 1c62,approved,d00976
+pain icd11 mg30mg3z,investigative,d00976
+tinnitus icd11 mc41,approved,d00977
+multidrug resistant tuberculosis icd11 mg5200,approved,d00978
+mycobacterium infection icd11 1b101b21,phase 3,d00978
+contraception icd11 qa21,approved,d00979
+urinary tract infection icd11 gc08,approved,d00980
+chagas disease icd11 if53,approved,d00981
+trypanosomiasis icd11 1d511f53,phase 4,d00981
+hyperthermia icd11 mg26,approved,d00982
+bacterial infection icd11 1a001c4z,approved,d00983
+gastroesophageal reflux disease icd11 da22z,approved,d00984
+gastrointestinal disease icd11 de2z,investigative,d00984
+contraception icd11 qa21,approved,d00985
+fibromyalgia icd11 mg3001,approved,d00986
+pulmonary arterial hypertension icd11 bb010,approved,d00987
+osteoporosis icd11 fb830,approved,d00988
+mood disorder icd11 6a606e23,approved,d00989
+female sexual arousal dysfunction icd11 ha011,phase 3,d00989
+renal cell carcinoma icd11 2c90,approved,d00990
+solid tumourcancer icd11 2a002f9z,approved,d00991
+benign prostatic hyperplasia icd11 ga90,approved,d00992
+prostate cancer icd11 2c820,phase 3,d00992
+complex partial seizure icd11 8a680,phase 3,d00993
+postpartum depression icd11 6e200,phase 2,d00993
+major depressive disorder icd11 6a703,approved,d00994
+acute coronary syndrome icd11 ba41,approved,d00995
+invasive aspergillosis icd11 1f200,phase 3,d00996
+invasive candidiasis icd11 1f23,phase 3,d00996
+candidemia icd11 1f233y,phase 3,d00996
+lupus nephritis icd11 4a400y,approved,d00997
+psoriasis vulgaris icd11 ea90,phase 3,d00997
+kidney disease icd11 gc2z,phase 2,d00997
+pulmonary arterial hypertension icd11 bb010,approved,d00998
+type2 diabetes icd11 5a11,approved,d00999
+filarial disease icd11 1f66,phase 1,d01000
+actinic keratosis icd11 ek900,approved,d01001
+melanoma icd11 2c30,phase 3,d01001
+multiple myeloma icd11 2a83,approved,d01002
+type2 diabetes icd11 5a11,phase 3,d01002
+primary myelofibrosis icd11 2a202,phase 2,d01002
+bacterial infection icd11 1a001c4z,approved,d01003
+peptic ulcer icd11 da61,approved,d01004
+atrial fibrillation icd11 bc813,phase 3,d01005
+bacterial infection icd11 1a001c4z,approved,d01006
+coagulation defect icd11 3b100,withdrawn from market,d01007
+nonerosive gastroesophageal reflux disease icd11 da220,approved,d01009
+erosive esophagitis icd11 da250,approved,d01009
+peptic ulcer icd11 da61,approved,d01009
+nsaidassociated gastric ulcer icd11 da60,phase 3,d01009
+nonerosive gastroesophageal reflux disease icd11 da220,approved,d01385
+erosive esophagitis icd11 da250,approved,d01385
+peptic ulcer icd11 da61,approved,d01385
+nsaidassociated gastric ulcer icd11 da60,phase 3,d01385
+pediatric cancer icd11 2a002f9z,approved,d01010
+huntington disease icd11 8a0110,phase 3,d01011
+somatotropin deficiency icd11 5a610,approved,d01012
+growth hormone deficiency icd11 5a613,approved,d01012
+hormone replacement therapy icd11 8e01,approved,d01014
+inflammatory bowel disease icd11 dd72,phase 2,d01015
+rheumatoid arthritis icd11 fa20,phase 2,d01015
+hypertension icd11 ba00ba04,phase 4,d01016
+thyroid cancer icd11 2d10,approved,d01017
+hepatocellular carcinoma icd11 2c1202,phase 3,d01017
+renal cell carcinoma icd11 2c90,phase 3,d01017
+melanoma icd11 2c30,phase 2,d01017
+solid tumourcancer icd11 2a002f9z,phase 12,d01017
+ovarian cancer icd11 2c73,phase 1,d01017
+nonsmallcell lung cancer icd11 2c25y,application submitted,d01017
+type2 diabetes icd11 5a11,approved,d01018
+acute myeloid leukaemia icd11 2a60,approved,d01019
+systemic mastocytosis icd11 2a210,approved,d01019
+chronic myelomonocytic leukaemia icd11 2a40,phase 2,d01019
+colorectal cancer icd11 2b91z,phase 1,d01019
+progressive familial intrahepatic cholestasis icd11 5c5803,phase 3,d01021
+alagille syndrome icd11 lb200y,phase 2,d01021
+river blindness icd11 1f6a0,approved,d01022
+onchocerciasis icd11 1f6a,approved,d01022
+complex partial seizure icd11 8a680,approved,d01023
+epilepsy icd11 8a608a68,phase 3,d01023
+pain icd11 mg30mg3z,phase 3,d01023
+acute pain icd11 mg31,approved,d01024
+overactive bladder icd11 gc500,approved,d01026
+thrombosis icd11 db61gb90,approved,d01029
+breast cancer icd11 2c602c65,approved,d01030
+solid tumourcancer icd11 2a002f9z,phase 2,d01030
+overactive bladder icd11 gc500,approved,d01031
+procedural sedation icd11 jb0c3,approved,d01032
+anaesthesia icd11 9a786,phase 3,d01032
+erectile dysfunction icd11 ha011,approved,d01033
+bacterial infection icd11 1a001c4z,approved,d01034
+deep vein thrombosis icd11 bd71,approved,d01036
+alcohol dependence icd11 6c402,phase 2,d01037
+alcohol dependence icd11 6c402,phase 2,d01037
+alcohol dependence icd11 6c402,phase 2,d01386
+alcohol dependence icd11 6c402,phase 2,d01386
+type2 diabetes icd11 5a11,approved,d01038
+renal cell carcinoma icd11 2c90,approved,d01039
+pulmonary arterial hypertension icd11 bb010,approved,d01040
+rheumatoid arthritis icd11 fa20,approved,d01042
+ovarian cancer icd11 2c73,approved,d01043
+excessive daytime sleepiness icd11 mg42,approved,d01044
+schizophrenia icd11 6a20,phase 3,d01044
+allergic rhinitis icd11 ca080,approved,d01045
+major depressive disorder icd11 6a703,approved,d01046
+mood disorder icd11 6a606e23,phase 3,d01046
+clostridium difficile associated diarrhea icd11 1a04,approved,d01047
+parkinson disease icd11 8a000,approved,d01048
+myocardial infarction icd11 ba41ba43,approved,d01049
+type2 diabetes icd11 5a11,approved,d01050
+melanoma icd11 2c30,phase 3,d01052
+thyroid cancer icd11 2d10,phase 3,d01052
+nonsmallcell lung cancer icd11 2c25y,phase 2,d01052
+solid tumourcancer icd11 2a002f9z,investigative,d01052
+excessive daytime sleepiness icd11 mg42,approved,d01053
+narcolepsy icd11 7a20,phase 3,d01053
+osteoporosis icd11 fb830,phase 3,d01054
+alagille syndrome icd11 lb200y,phase 3,d01055
+thrombosis icd11 db61gb90,approved,d01057
+insomnia icd11 7a007a0z,approved,d01059
+focal segmental glomerulosclerosis icd11 mf8y,phase 3,d01060
+myocardial infarction icd11 ba41ba43,phase 2,d01060
+hypertension icd11 ba00ba04,phase 2,d01060
+venous thromboembolism icd11 bd72,approved,d01061
+cerebrovascular ischaemia icd11 8b1z,phase 3,d01061
+fibrodysplasia ossificans progressiva icd11 fb311,phase 3,d01063
+emphysema icd11 ca21,phase 2,d01063
+chemotherapyinduced nausea icd11 md90,approved,d01064
+hepatitis c virus infection icd11 1e511,approved,d01065
+prostate cancer icd11 2c820,approved,d01066
+endometriosis icd11 ga10,phase 3,d01066
+familial hypercholesterolemia icd11 5c8000,approved,d01067
+cardiovascular disease icd11 ba00be2z,phase 3,d01067
+hepatic encephalopathy icd11 db995,approved,d01068
+bipolar disorder icd11 6a60,approved,d01070
+metastatic colorectal cancer icd11 2b91,approved,d01071
+schizophrenia icd11 6a20,approved,d01072
+type2 diabetes icd11 5a11,approved,d01073
+diarrheapredominant irritable bowel syndrome icd11 dd9101,approved,d01074
+uterine fibroids icd11 2e860,phase 3,d01075
+pulmonary arterial hypertension icd11 bb010,approved,d01077
+fragile x syndrome icd11 ld55,phase 2,d01078
+rett syndrome icd11 ld904,phase 2,d01078
+traumatic brain injury icd11 na07z,phase 2,d01078
+type1 diabetes icd11 5a10,phase 2,d01078
+human immunodeficiency virus infection icd11 1c62,approved,d01079
+multiple sclerosis icd11 8a40,approved,d01080
+psoriasis vulgaris icd11 ea90,phase 2,d01080
+type2 diabetes icd11 5a11,approved,d01082
+nonsmallcell lung cancer icd11 2c25y,approved,d01086
+psoriasis vulgaris icd11 ea90,approved,d01087
+attention deficit hyperactivity disorder icd11 6a05z,approved,d01088
+migraine icd11 8a80,approved,d01089
+chronic lymphocytic leukaemia icd11 2a820,approved,d01090
+nonsmallcell lung cancer icd11 2c25y,approved,d01091
+vascular dementia icd11 6d81,phase 2,d01092
+obesity icd11 5b81,approved,d01094
+drug abuse icd11 6c4g1z,phase 1,d01094
+immune thrombocytopenic purpura icd11 3b6413,approved,d01096
+rheumatoid arthritis icd11 fa20,phase 3,d01096
+melanoma icd11 2c30,approved,d01097
+anemia icd11 3a003a9z,investigative,d01098
+type1 diabetes icd11 5a10,approved,d01099
+rheumatoid arthritis icd11 fa20,phase 2,d01100
+psoriasis vulgaris icd11 ea90,phase 2,d01100
+psoriatic arthritis icd11 fa21,phase 1,d01100
+scleroderma icd11 4a42,phase 1,d01100
+systemic lupus erythematosus icd11 4a400,phase 1,d01100
+hypertension icd11 ba00ba04,approved,d01101
+complex partial seizure icd11 8a680,approved,d01103
+contraception icd11 qa21,approved,d01105
+prostate cancer icd11 2c820,approved,d01106
+cardiovascular disease icd11 ba00be2z,approved,d01107
+smallpox icd11 1e70,approved,d01109
+virus infection icd11 1a241d9z,phase 3,d01109
+osteoporosis icd11 fb830,approved,d01110
+deep vein thrombosis icd11 bd71,approved,d01111
+thrombocytopenia icd11 3b64,approved,d01112
+osteogenesis imperfecta icd11 ld24k0,approved,d01113
+psoriatic disorder icd11 ea90,discontinued in phase 2,d01113
+type2 diabetes icd11 5a11,approved,d01114
+obesity icd11 5b81,phase 2,d01114
+pain icd11 mg30mg3z,approved,d01115
+traumatic brain injury icd11 na07z,phase 12,d01115
+diabetic complication icd11 5a2y,approved,d01116
+irritable bowel syndrome icd11 dd910,approved,d01118
+cystic fibrosis icd11 ca25,approved,d01119
+cystic fibrosis icd11 ca25,phase 2,d01121
+myelofibrosis icd11 2a202,approved,d01123
+hivassociated diarrhoea icd11 1a2z,approved,d01124
+breast cancer icd11 2c602c65,phase 3,d01125
+high blood cholesterol level icd11 5c8000,approved,d01126
+ovarian cancer icd11 2c73,approved,d01128
+pancreatic cancer icd11 2c10,phase 3,d01128
+prostate cancer icd11 2c820,phase 3,d01128
+inflammatory arthritis icd11 fa2z,approved,d01129
+head and body lice icd11 1g000,approved,d01130
+basal cell carcinoma icd11 2c32,approved,d01132
+primitive neuroectodermal tumour medulloblastoma icd11 2a0011,phase 2,d01132
+pruritus icd11 ec90,phase 3,d01135
+type2 diabetes icd11 5a11,approved,d01137
+diabetic nephropathy icd11 gb61z,phase 3,d01137
+type1 diabetes icd11 5a10,phase 2,d01137
+mantle cell lymphoma icd11 2a855,approved,d01138
+bcell nonhodgkin lymphoma icd11 2b335,phase 3,d01138
+diffuse large bcell lymphoma icd11 2a81,phase 3,d01138
+follicular lymphoma icd11 2a80,phase 3,d01138
+nonhodgkin lymphoma icd11 2b335,phase 3,d01138
+pancreatic cancer icd11 2c10,phase 3,d01138
+solid tumourcancer icd11 2a002f9z,phase 2,d01138
+acute lymphoblastic leukaemia icd11 2a85,approved,d01139
+chronic hcv1 infection icd11 1e511,approved,d01143
+insomnia icd11 7a007a0z,approved,d01145
+myelofibrosis icd11 2a202,phase 3,d01146
+polycythemia vera icd11 2a204,phase 2,d01146
+thrombocythemia icd11 3b63,phase 2,d01146
+endometriosis icd11 ga10,approved,d01147
+thyroid cancer icd11 2d10,approved,d01148
+ovarian cancer icd11 2c73,phase 2,d01148
+highrisk myelofibrosis icd11 2a202,approved,d01149
+essential thrombocythemia icd11 3b631z,approved,d01149
+pancreatic cancer icd11 2c10,phase 3,d01149
+atopic dermatitis icd11 ea80,phase 12,d01149
+vitiligo icd11 ed630,phase 12,d01149
+nonsmall cell lung cancer icd11 2c25,approved,d01151
+colorectal cancer icd11 2b91z,phase 2,d01151
+solid tumourcancer icd11 2a002f9z,phase 2,d01151
+neuroblastoma icd11 2d112,phase 1,d01151
+mammary analogue secretory carcinoma icd11 2c60,phase 1,d01151
+nonsmallcell lung cancer icd11 2c25y,approved,d01152
+hepatocellular carcinoma icd11 2c1202,phase 2,d01152
+recurrent glioblastoma icd11 2a0000,phase 1,d01152
+tenosynovial giant cell tumour icd11 2f7b,approved,d01153
+alzheimer disease icd11 8a20,phase 3,d01153
+pigmented villonodular synovitis icd11 fa271,phase 3,d01153
+neurofibromatosis type 1 icd11 ld2d10,phase 12,d01153
+human immunodeficiency virus infection icd11 1c62,approved,d01154
+hepatitis c virus infection icd11 1e511,approved,d01155
+nonsmall cell lung cancer icd11 2c25,approved,d01157
+hepatocellular carcinoma icd11 2c1202,phase 2,d01157
+solid tumourcancer icd11 2a002f9z,phase 12,d01157
+carcinoid syndrome diarrhea icd11 da900,approved,d01158
+carcinoid syndrome icd11 5b10,approved,d01158
+multiple myeloma icd11 2a83,approved,d01159
+communityacquired pneumonia icd11 ca40z,approved,d01160
+acute bacterial skin infection icd11 1c41,phase 2,d01160
+type2 diabetes icd11 5a11,phase 3,d01161
+melanoma icd11 2c30,approved,d01162
+cushing disease icd11 5a70,approved,d01163
+pulmonary tuberculosis icd11 1b10z,phase 2,d01164
+rheumatoid arthritis icd11 fa20,approved,d01165
+melanoma icd11 2c30,approved,d01167
+melanoma icd11 2c30,approved,d01167
+melanoma icd11 2c30,approved,d01388
+melanoma icd11 2c30,approved,d01388
+overactive bladder icd11 gc500,approved,d01168
+solid tumourcancer icd11 2a002f9z,phase 3,d01169
+multiple sclerosis icd11 8a40,approved,d01171
+hepatocellular carcinoma icd11 2c1202,phase 3,d01171
+rheumatoid arthritis icd11 fa20,phase 2,d01171
+nonsmallcell lung cancer icd11 2c25y,registered,d01173
+stroke icd11 8b20,approved,d01174
+venous thromboembolism icd11 bd72,approved,d01174
+embolism icd11 jb42,approved,d01174
+menopause symptom icd11 ga300,approved,d01178
+vasomotor symptom icd11 ca08,approved,d01178
+helicobacter infection icd11 da42da63,approved,d01180
+gastroesophageal reflux disease icd11 da22z,phase 3,d01180
+type2 diabetes icd11 5a11,approved,d01181
+cardiovascular disease icd11 ba00be2z,phase 3,d01181
+solid tumourcancer icd11 2a002f9z,approved,d01182
+autism spectrum disorder icd11 6a02,phase 3,d01184
+myelofibrosis icd11 2a202,phase 3,d01185
+chronic myelogenous leukaemia icd11 2a200,phase 2,d01187
+acute myeloid leukaemia icd11 2a60,approved,d01189
+lung cancer icd11 2c250,approved,d01190
+nonsmallcell lung cancer icd11 2c25y,phase 2,d01190
+thrombocytopenia icd11 3b64,approved,d01192
+liver disease icd11 db90bd99,phase 2,d01192
+acute coronary syndrome icd11 ba41,discontinued in phase 3,d01193
+endometriosis icd11 ga10,phase 2,d01196
+her2positive breast cancer icd11 2c602c65,approved,d01198
+gastric adenocarcinoma icd11 2b72,phase 23,d01198
+migraine icd11 8a80,approved,d01199
+metabolic disorder icd11 5c505d2z,approved,d01200
+neuroendocrine cancer icd11 2b721,phase 3,d01201
+solid tumourcancer icd11 2a002f9z,phase 1,d01201
+multiple sclerosis icd11 8a40,approved,d01202
+ulcerative colitis icd11 dd71,phase 3,d01202
+nonsmallcell lung cancer icd11 2c25y,phase 3,d01202
+crohn disease icd11 dd70,phase 2,d01202
+hyperuricaemia icd11 5c55y,approved,d01204
+human immunodeficiency virus infection icd11 1c62,approved,d01206
+chronic periodontitis icd11 da0cy,approved,d01207
+advanced gum disease icd11 da0d,approved,d01207
+diabetic foot ulcer icd11 bd54,phase 2,d01207
+heart failure icd11 bd10bd13,approved,d01208
+bacterial infection icd11 1a001c4z,approved,d01209
+bacterial infection icd11 1a001c4z,approved,d01210
+bacterial infection icd11 1a001c4z,approved,d01211
+rosacea icd11 ed900,phase 2,d01211
+pain icd11 mg30mg3z,approved,d01213
+thrombosis icd11 db61gb90,approved,d01214
+arthritis icd11 fa20,approved,d01215
+rheumatoid arthritis icd11 fa20,approved,d01216
+atrial fibrillation icd11 bc813,approved,d01217
+thrombosis icd11 db61gb90,application submitted,d01217
+thrombosis icd11 db61gb90,approved,d01219
+acne vulgaris icd11 ed80,approved,d01220
+human immunodeficiency virus infection icd11 1c62,approved,d01221
+acne vulgaris icd11 ed80,approved,d01222
+hyperlipidaemia icd11 5c80,approved,d01223
+multiple sclerosis icd11 8a40,approved,d01223
+rheumatoid arthritis icd11 fa20,phase 3,d01223
+hepatitis b virus infection icd11 1e510,phase 1,d01223
+acute bacterial skin infection icd11 1c41,approved,d01225
+bacterial pneumonia icd11 ca400,approved,d01225
+bacterial infection icd11 1a001c4z,phase 3,d01225
+bacterial infection icd11 1a001c4z,approved,d01226
+human immunodeficiency virus infection icd11 1c62,approved,d01228
+breast cancer icd11 2c602c65,approved,d01234
+solid tumourcancer icd11 2a002f9z,phase 2,d01234
+diarrhea icd11 me051,approved,d01235
+type2 diabetes icd11 5a11,approved,d01236
+insomnia icd11 7a007a0z,approved,d01237
+alzheimer disease icd11 8a20,phase 2,d01237
+opioidinduced constipation icd11 db321,approved,d01238
+nonsmallcell lung cancer icd11 2c25y,phase 3,d01239
+nonsmallcell lung cancer icd11 2c25y,approved,d01240
+sjogren syndrome icd11 4a4320,phase 2,d01241
+hepatitis c virus infection icd11 1e511,discontinued in phase 1,d01242
+rheumatoid arthritis icd11 fa20,approved,d01244
+psoriatic arthritis icd11 fa21,phase 3,d01244
+atopic dermatitis icd11 ea80,phase 2,d01244
+crohn disease icd11 dd70,phase 2,d01244
+ulcerative colitis icd11 dd71,phase 2,d01244
+peripheral neuropathy icd11 8c0z,registered,d01246
+fibromyalgia icd11 mg3001,phase 3,d01246
+cancer related pain icd11 mg30,phase 3,d01246
+cardiovascular disease icd11 ba00be2z,phase 3,d01246
+pyruvate kinase deficiency icd11 5c5300,phase 2,d01247
+diabetic nephropathy icd11 gb61z,phase 3,d01248
+dyslipidemia icd11 5c805c81,approved,d01249
+follicular lymphoma icd11 2a80,approved,d01250
+malignant rhabdoid tumour icd11 2a001y,phase 2,d01250
+brain and central nervous system tumour icd11 2a0011,phase 2,d01250
+mesothelioma icd11 2c512,phase 2,d01250
+solid tumourcancer icd11 2a002f9z,phase 2,d01250
+diffuse large bcell lymphoma icd11 2a81,phase 12,d01250
+synovial sarcoma icd11 2b5a,phase 1,d01250
+prostate cancer icd11 2c820,approved,d01253
+her2neu overexpressing breast cancer icd11 2c602c65,approved,d01254
+bladder cancer icd11 2c94,approved,d01255
+urothelial carcinoma icd11 2c920,phase 2,d01255
+solid tumourcancer icd11 2a002f9z,phase 2,d01255
+lymphoma icd11 2a802a86,phase 12,d01255
+nonsmallcell lung cancer icd11 2c25y,approved,d01258
+anaplastic large cell lymphoma icd11 2a90a,approved,d01258
+renal cell carcinoma icd11 2c90,phase 3,d01259
+solid tumourcancer icd11 2a002f9z,phase 2,d01259
+migraine icd11 8a80,approved,d01261
+type12 diabetes icd11 5a105a11,approved,d01263
+irritable bowel syndrome icd11 dd910,approved,d01264
+chronic idiopathic constipation icd11 dc32,approved,d01264
+crohn disease icd11 dd70,phase 3,d01264
+diarrhea icd11 me051,approved,d01265
+mantle cell lymphoma icd11 2a855,approved,d01266
+chronic lymphocytic leukaemia icd11 2a820,phase 3,d01266
+familial hypercholesterolemia icd11 5c8000,approved,d01267
+melanoma icd11 2c30,approved,d01268
+multiple myeloma icd11 2a83,phase 3,d01269
+liposarcoma icd11 2b59,phase 3,d01269
+neuroendocrine cancer icd11 2b721,phase 3,d01269
+solid tumourcancer icd11 2a002f9z,phase 2,d01269
+diffuse large bcell lymphoma icd11 2a81,phase 2,d01269
+acute myeloid leukaemia icd11 2a60,phase 2,d01269
+recurrent glioblastoma icd11 2a0000,phase 2,d01269
+nonsmallcell lung cancer icd11 2c25y,approved,d01270
+melanoma icd11 2c30,phase 3,d01270
+gastrointestinal stromal tumour icd11 2b5b,approved,d01271
+glioma icd11 2a000,phase 1,d01271
+solid tumourcancer icd11 2a002f9z,phase 1,d01271
+systemic mastocytosis icd11 2a210,phase 1,d01271
+irritable bowel syndrome icd11 dd910,approved,d01272
+kidney disease icd11 gc2z,phase 2,d01272
+constipation icd11 dd911,phase 2,d01272
+sicklecell disorder icd11 3a51,approved,d01273
+cholangiocarcinoma icd11 2c1210,phase 3,d01274
+multiple myeloma icd11 2a83,phase 12,d01274
+solid tumourcancer icd11 2a002f9z,phase 12,d01274
+acute myeloid leukaemia icd11 2a60,approved,d01275
+cholangiocarcinoma icd11 2c1210,phase 3,d01275
+haematological malignancy icd11 2b33y,phase 1,d01275
+coronavirus disease 2019 covid19 icd11 1d6y,investigative,d01276
+nonsmallcell lung cancer icd11 2c25y,approved,d01277
+friedreichs ataxia icd11 8a0310,phase 2,d01278
+melanoma icd11 2c30,phase 12,d01278
+psychiatric disorder icd11 6e8z,clinical trial,d01278
+migraine icd11 8a80,phase 23,d01279
+invasive aspergillosis icd11 1f200,phase 3,d01281
+haematological malignancy icd11 2b33y,phase 1,d01281
+follicular lymphoma icd11 2a80,approved,d01282
+marginal zone lymphoma icd11 2a850,approved,d01282
+diffuse large bcell lymphoma icd11 2a81,phase 23,d01282
+chronic lymphocytic leukaemia icd11 2a820,phase 2,d01282
+nonhodgkin lymphoma icd11 2b335,phase 2,d01282
+tardive dyskinesia icd11 8a0210,approved,d01284
+huntington disease icd11 8a0110,approved,d01284
+postmenopausal osteoporosis icd11 fb8311,approved,d01287
+atopic dermatitis icd11 ea80,phase 3,d01290
+lupus icd11 4a40,phase 2,d01290
+peritoneal cancer icd11 2c51z,approved,d01291
+fallopian tube cancer icd11 2c74,approved,d01291
+cholangiocarcinoma icd11 2c1210,approved,d01293
+bladder cancer icd11 2c94,phase 2,d01293
+myeloproliferative syndrome icd11 2a22,phase 2,d01293
+major depressive disorder icd11 6a703,phase 1,d01296
+type2 diabetes icd11 5a11,approved,d01297
+acute myeloid leukaemia icd11 2a60,approved,d01298
+obstructive hypertrophic cardiomyopathy icd11 bc4312,phase 3,d01300
+renal cell carcinoma icd11 2c90,phase 3,d01301
+von hippellindau disease icd11 5a75,phase 2,d01301
+solid tumourcancer icd11 2a002f9z,phase 1,d01301
+gastrointestinal stromal tumour icd11 2b5b,approved,d01302
+mast cell leukaemia icd11 2a2100,phase 1,d01302
+systemic mastocytosis icd11 2a210,phase 1,d01302
+hepatocellular carcinoma icd11 2c1202,phase 1,d01303
+spinal muscular atrophy icd11 8b61,approved,d01305
+nonsmall cell lung cancer icd11 2c25,phase 3,d01306
+thrombocytopenia icd11 3b64,approved,d01307
+type12 diabetes icd11 5a105a11,approved,d01310
+achondroplasia icd11 ld2400,phase 3,d01311
+nonsmallcell lung cancer icd11 2c25y,phase 3,d01313
+acne vulgaris icd11 ed80,approved,d01315
+coronary artery disease icd11 ba80,phase 2,d01316
+influenza virus infection icd11 1e301e32,approved,d01317
+nonsmallcell lung cancer icd11 2c25y,approved,d01318
+solid tumourcancer icd11 2a002f9z,phase 1,d01318
+chronic lymphocytic leukaemia icd11 2a820,phase 3,d01319
+small lymphocytic lymphoma icd11 2a820,phase 3,d01319
+plaque psoriasis icd11 ea900,phase 3,d01321
+psoriasis vulgaris icd11 ea90,phase 3,d01321
+nonsmallcell lung cancer icd11 2c25y,approved,d01322
+thyroid cancer icd11 2d10,approved,d01322
+colon cancer icd11 2b90z,phase 12,d01322
+hepatitis b virus infection icd11 1e510,approved,d01323
+vitamin deficiency icd11 5b555b71,approved,d01326
+folatedeficiency anemia icd11 3a02y,approved,d01326
+tuberculosis icd11 1b101b1z,approved,d01327
+tuberculosis icd11 1b101b1z,approved,d01327
+tuberculosis icd11 1b101b1z,approved,d01390
+tuberculosis icd11 1b101b1z,approved,d01390
+schizophrenia icd11 6a20,approved,d01328
+melanoma icd11 2c30,approved,d01329
+human immunodeficiency virus infection icd11 1c62,approved,d01330
+virus infection icd11 1a241d9z,approved,d01331
+mycobacterium infection icd11 1b101b21,approved,d01333
+tuberculosis icd11 1b101b14,approved,d01333
+erectile dysfunction icd11 ha011,approved,d01334
+coronavirus disease 2019 covid19 icd11 1d6y,phase 3,d01334
+schizophrenia icd11 6a20,approved,d01335
+erectile dysfunction icd11 ha011,approved,d01336
+hyperuricaemia icd11 5c55y,approved,d01337
+tuberculosis icd11 1b101b1z,approved,d01338
+macular degeneration icd11 9b783,investigative,d01338
+thrombocythemia icd11 3b63,approved,d01339
+essential thrombocythemia icd11 3b631z,phase 2,d01339
+irritable bowel syndrome icd11 dd910,approved,d01340
+gastrooesophageal reflux icd11 da22,withdrawn from market,d01340
+dyspepsia icd11 md92,withdrawn from market,d01340
+hyperphenylalaninemia icd11 5c50,approved,d01341
+malignant pleural mesothelioma icd11 2c260,approved,d01343
+virus infection icd11 1a241d9z,approved,d01344
+depression icd11 6a706a7z,approved,d01345
+nausea icd11 md90,approved,d01345
+solid tumourcancer icd11 2a002f9z,phase 3,d01345
+thrombocytopenia icd11 3b64,approved,d01347
+idiopathic thrombocytopenic purpura icd11 3b6410,phase 3,d01347
+breast cancer icd11 2c602c65,approved,d01348
+psoriatic arthritis icd11 fa21,phase 3,d01348
+venous thromboembolism icd11 bd72,phase 3,d01350
+parkinson disease icd11 8a000,approved,d01351
+mantle cell lymphoma icd11 2a855,approved,d01352
+chronic lymphocytic leukaemia icd11 2a820,phase 3,d01352
+small lymphocytic lymphoma icd11 2a820,phase 3,d01352
+waldenstrom macroglobulinemia icd11 2a854,phase 3,d01352
+bcell lymphoma icd11 2a86,phase 1,d01352
+nonsmallcell lung cancer icd11 2c25y,phase 3,d01353
+hereditary angioedema icd11 4a0014,approved,d01354
+human immunodeficiency virus infection icd11 1c62,phase 23,d01355
+nonsmallcell lung cancer icd11 2c25y,phase 3,d01356
+venous thrombosis icd11 ba43,approved,d01358
+coronavirus disease 2019 covid19 icd11 1d6y,investigative,d01358
+hepatitis c virus infection icd11 1e511,approved,d01391
+hairy cell leukaemia icd11 2a822,approved,d01393
+pulmonary embolism icd11 bb00,approved,d01394
+chronic myelogenous leukaemia icd11 2a200,approved,d01395
+anemia icd11 3a003a9z,approved,d01396
+myocardial infarction icd11 ba41ba43,approved,d01397
+heart attack icd11 ba41,approved,d01398
+hepatitis c virus infection icd11 1e511,approved,d01399
+acute coronary syndrome icd11 ba41,approved,d01400
+myocardial infarction icd11 ba41ba43,approved,d01402
+chronic granulomatous disease icd11 4a000y,approved,d01403
+chronic hcv1 infection icd11 1e511,approved,d01404
+angina pectoris icd11 ba40,approved,d01405
+cerebrovascular ischaemia icd11 8b1z,approved,d01406
+severe sepsis icd11 1g401g41,approved,d01406
+solid tumourcancer icd11 2a002f9z,approved,d01407
+multiple sclerosis icd11 8a40,approved,d01408
+multiple sclerosis icd11 8a40,approved,d01409
+growth failure icd11 ld2f1y,approved,d01415
+ischemic stroke icd11 8b115z,phase 3,d01418
+her2positive breast cancer icd11 2c602c65,phase 3,d01421
+breast cancer icd11 2c602c65,phase 2,d01421
+rheumatoid arthritis icd11 fa20,approved,d01422
+cryopyrinassociated periodic syndromes icd11 4a601,approved,d01422
+vasculitis icd11 4a44,phase 2,d01422
+urticaria icd11 eb00eb05,phase 2,d01422
+postmenopausal osteoporosis icd11 fb8311,approved,d01423
+prostate cancer icd11 2c820,phase 3,d01423
+rheumatoid arthritis icd11 fa20,phase 2,d01423
+hodgkin lymphoma icd11 2b30,approved,d01425
+metabolic disorder icd11 5c505d2z,approved,d01426
+chronic lymphocytic leukaemia icd11 2a820,approved,d01427
+haematological malignancy icd11 2b33y,phase 1,d01427
+diabetic complication icd11 5a2y,approved,d01429
+breast cancer icd11 2c602c65,approved,d01435
+diffuse large bcell lymphoma icd11 2a81,approved,d01451
+follicular lymphoma icd11 2a80,phase 2,d01451
+haematological malignancy icd11 2b33y,phase 2,d01451
+type 2 diabetes icd11 5a11,phase 3,d01475
+haemophilia a icd11 3b100,phase 3,d01481
+lymphoma icd11 2a802a86 icd10 c81c86 icd9 202,phase 1,d01502
+cough icd11 md12 icd10 r05,phase 1,d01503
+endometriosis icd11 ga10 icd10 n80 n809,phase 1,d01503
+cardiovascular disease icd11 ba00be2z icd10 i00i99,approved,d01508
+acute asthma icd11 ca23 icd10 j45 j458 icd9 493,approved,d01486
+schizophrenia icd11 6a20,withdrawn from market,d01413
+malaria icd11 1f401f45 icd10 b50b64 b54,approved,d01510
+bacterial infection icd11 1a001c4z icd10 a00b99,approved,d01511
+diarrhea icd11 me051,approved,d01512
+female infertility icd11 ga31z,approved,d01513
+osteoarthritis icd11 fa00fa05 icd9 715,approved,d01514
+heart block icd11 bc63,approved,d01515
+melanoma icd11 2c30 icd9 172,phase 1,d01515

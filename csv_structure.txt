@@ -1,0 +1,61 @@
+﻿
+disease_information:
+Columns: ['indication', 'state', 'fhdi_drug_id']
+
+Sample data (first 5 fields):
+  indication: constipation icd11 dd911
+  state: approved
+  fhdi_drug_id: d00001
+
+drug_information:
+Columns: ['fhdi_drug_id', 'drug_name', 'synonyms', 'drug_type', 'summary', 'formula']
+
+Sample data (first 5 fields):
+  fhdi_drug_id: d00001
+  drug_name: polyethylene glycol
+  synonyms: ethylene glycol ethane12diol 12ethanediol 107211 glycol monoethylene glycol 12di
+  drug_type: small molecular drug
+  summary: polyethylene glycoláis a laxative used to treat constipation and used for bowel 
+  formula: c2h6o2
+
+food_information:
+Columns: ['fhdi_food_id', 'food_name', 'scientific_name', 'common_name', 'description', 'group', 'subgroup', 'drug_homologous_food']
+
+Sample data (first 5 fields):
+  fhdi_food_id: f00001
+  food_name: pomegranate
+  scientific_name: punica granatum
+  common_name: granatum punicumpunica floridapunica grandiflorapunica nanapunica spinosarhoea p
+  description: the pomegranate scientific name punica granatum is a fruitbearing deciduous shru
+  group: fruits
+  subgroup: tropical fruits
+  drug_homologous_food: not specified
+
+herb_information:
+Columns: ['fhdi_herb_id', 'herb_latin_name', 'herb_english_name', 'herb_pinyin_name', 'herb_chinese_name', 'properties', 'function\xa0', 'indication', 'therapeutic_class']
+
+Sample data (first 5 fields):
+  fhdi_herb_id: h00001
+  herb_latin_name: acacia nilotica
+  herb_english_name: gumarabic tree
+  herb_pinyin_name: a la bo jiao jin he huan
+  herb_chinese_name: 
+  properties: not specified
+  functioná: not specified
+  indication: not specified
+  therapeutic_class: not specified
+
+drug_foodherb_interaction:
+Columns: ['fhdi_drug_id', 'drug_name', 'drug_dose', 'dosage_form', 'food_herb_id', 'food_herb_name', 'type', 'component', 'dose', 'time', 'effect', 'conclusion']
+
+Sample data (first 5 fields):
+  fhdi_drug_id: d00162
+  drug_name: flurbiprofen
+  drug_dose: 100 mg
+  dosage_form: not specified
+  food_herb_id: f00001
+  food_herb_name: pomegranate
+  type: food
+  component: not specified
+  dose: not specified
+  time: not specified
