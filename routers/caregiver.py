@@ -8,19 +8,47 @@ import pymongo
 
 router = APIRouter()
 
+async def _get_caregiver_with_elders(db, caregiver_id: ObjectId):
+    """Fetch a single caregiver with its elder_ids populated as full objects."""
+    pipeline = [
+        { "$match": { "_id": caregiver_id } },
+        {
+            "$addFields": {
+                "elder_ids": {
+                    "$map": {
+                        "input": { "$ifNull": ["$elder_ids", []] },
+                        "as": "id",
+                        "in": { "$toObjectId": "$$id" }
+                    }
+                }
+            }
+        },
+        {
+            "$lookup": {
+                "from": "elders",
+                "localField": "elder_ids",
+                "foreignField": "_id",
+                "as": "elder_ids"
+            }
+        },
+    ]
+    result = await db.caregivers.aggregate(pipeline).to_list(length=1)
+    if not result:
+        return None
+    cg = result[0]
+    map_document(cg)
+    if "elder_ids" in cg and isinstance(cg["elder_ids"], list):
+        for elder in cg["elder_ids"]:
+            map_document(elder)
+    return cg
+
+
 @router.post("/", status_code=201)
 async def create_caregiver(caregiver: CaregiverCreate):
     db = get_db()
-    # pickProvided logic is handled by Pydantic's exclude_unset=True usually,
-    # but let's be explicit to match exact logic if needed.
     caregiver_dict = caregiver.model_dump(exclude_unset=True)
-    
-    # Convert str IDs to ObjectIds if present in input (Pydantic handles this mostly via PyObjectId validation)
-    # But usually input JSON has strings.
-    
     result = await db.caregivers.insert_one(caregiver_dict)
-    created = await db.caregivers.find_one({"_id": result.inserted_id})
-    return map_document(created)
+    return await _get_caregiver_with_elders(db, result.inserted_id)
 
 @router.get("/")
 async def list_caregivers():
@@ -70,42 +98,9 @@ async def get_caregiver(id: str):
         raise HTTPException(status_code=400, detail="Invalid id")
         
     db = get_db()
-
-    pipeline = [
-        { "$match": { "_id": ObjectId(id) } },
-        {
-                "$addFields": {
-                    "elder_ids": {
-                        "$map": {
-                            "input": { "$ifNull": ["$elder_ids", []] },
-                            "as": "id",
-                            "in": { "$toObjectId": "$$id" }
-                        }
-                    }
-                }
-            },
-            {
-                "$lookup": {
-                    "from": "elders",
-                    "localField": "elder_ids",
-                    "foreignField": "_id",
-                    "as": "elder_ids"
-                }
-            },
-    ]
-
-    
-    result = await db.caregivers.aggregate(pipeline).to_list(length=1)
-    
-    if not result:
+    cg = await _get_caregiver_with_elders(db, ObjectId(id))
+    if not cg:
         raise HTTPException(status_code=404, detail="Not found")
-        
-    cg = result[0]
-    map_document(cg)
-    if "elder_ids" in cg and isinstance(cg["elder_ids"], list):
-        for elder in cg["elder_ids"]:
-            map_document(elder)
-            
     return cg
 
 @router.put("/{id}")
@@ -124,8 +119,7 @@ async def update_caregiver(id: str, caregiver: CaregiverUpdate):
     if updates:
         await db.caregivers.update_one({"_id": ObjectId(id)}, {"$set": updates})
         
-    updated = await db.caregivers.find_one({"_id": ObjectId(id)})
-    return map_document(updated) # Original updateCaregiver returns the updated doc (because it does findById, update props, save)
+    return await _get_caregiver_with_elders(db, ObjectId(id))
 
 @router.delete("/{id}")
 async def delete_caregiver(id: str):
