@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import HTMLResponse
 from contextlib import asynccontextmanager
 from database import connect_db, close_db, connect_ai_db, close_ai_db
-from routers import auth, caregiver, elder, service_provider, disease_information, drug_information, food_information, herb_information, drug_foodherb_interaction
+from routers import auth, caregiver, elder, service_provider, disease_information, drug_information, food_information, herb_information, drug_foodherb_interaction, medical_document, service
 from dependencies import get_current_user
 import config
 
@@ -48,6 +48,18 @@ app.include_router(
     service_provider.router, 
     prefix="/service-providers", 
     tags=["Service Providers"], 
+    dependencies=[Depends(get_current_user)]
+)
+app.include_router(
+    medical_document.router,
+    prefix="/medical-documents",
+    tags=["Medical Documents"],
+    dependencies=[Depends(get_current_user)]
+)
+app.include_router(
+    service.router,
+    prefix="/services",
+    tags=["Services"],
     dependencies=[Depends(get_current_user)]
 )
 
