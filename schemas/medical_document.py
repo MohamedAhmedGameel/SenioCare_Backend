@@ -4,6 +4,7 @@ from utils.pydantic_utils import PyObjectId
 
 
 class MedicalDocumentBase(BaseModel):
+    elder_id: Optional[str] = None
     document_name: Optional[str] = None
     date: Optional[str] = None
     images: List[str] = []
@@ -14,6 +15,7 @@ class MedicalDocumentCreate(MedicalDocumentBase):
 
 
 class MedicalDocumentUpdate(BaseModel):
+    elder_id: Optional[str] = None
     document_name: Optional[str] = None
     date: Optional[str] = None
     images: Optional[List[str]] = None

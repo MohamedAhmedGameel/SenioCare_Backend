@@ -24,6 +24,13 @@ async def list_services():
     return [map_document(s) for s in services]
 
 
+@router.get("/provider/{service_provider_id}")
+async def get_services_by_provider(service_provider_id: str):
+    db = get_db()
+    services = await db.services.find({"service_provider_id": service_provider_id}).to_list(length=None)
+    return [map_document(s) for s in services]
+
+
 @router.get("/{id}")
 async def get_service(id: str):
     if not ObjectId.is_valid(id):

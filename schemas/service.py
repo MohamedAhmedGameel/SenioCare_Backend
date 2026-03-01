@@ -17,6 +17,7 @@ class AvailabilityDay(BaseModel):
 
 
 class ServiceBase(BaseModel):
+    service_provider_id: Optional[str] = None
     serviceDescription: Optional[str] = None
     location: Optional[str] = None
     phone_number: Optional[str] = None
@@ -29,6 +30,7 @@ class ServiceCreate(ServiceBase):
 
 
 class ServiceUpdate(BaseModel):
+    service_provider_id: Optional[str] = None
     serviceDescription: Optional[str] = None
     location: Optional[str] = None
     phone_number: Optional[str] = None

@@ -24,6 +24,13 @@ async def list_medical_documents():
     return [map_document(d) for d in documents]
 
 
+@router.get("/elder/{elder_id}")
+async def get_documents_by_elder(elder_id: str):
+    db = get_db()
+    documents = await db.medical_documents.find({"elder_id": elder_id}).to_list(length=None)
+    return [map_document(d) for d in documents]
+
+
 @router.get("/{id}")
 async def get_medical_document(id: str):
     if not ObjectId.is_valid(id):
