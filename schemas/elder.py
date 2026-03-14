@@ -3,6 +3,7 @@ from typing import Optional, List
 from utils.pydantic_utils import PyObjectId
 
 class ElderBase(BaseModel):
+    userId: Optional[str] = None
     age: Optional[int] = None
     weight: Optional[float] = None
     height: Optional[float] = None

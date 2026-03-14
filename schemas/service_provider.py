@@ -3,6 +3,7 @@ from typing import Optional
 from utils.pydantic_utils import PyObjectId
 
 class ServiceProviderBase(BaseModel):
+    userId: Optional[str] = None
     name: Optional[str] = None
     gender: Optional[str] = None
     phone_number: Optional[str] = None

@@ -3,6 +3,7 @@ from typing import Optional, List, Literal
 from utils.pydantic_utils import PyObjectId
 
 class CaregiverBase(BaseModel):
+    userId: Optional[str] = None
     phone_number: Optional[str] = None
     gender: Optional[str] = None
     relationship: Literal["son", "daughter", "nurse", "other"] = "other"

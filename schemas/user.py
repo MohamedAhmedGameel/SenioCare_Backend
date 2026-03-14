@@ -8,6 +8,7 @@ class UserBase(BaseModel):
     email: EmailStr
     avatar: Optional[str] = None
     role: str
+    onBoard: bool = False
 
 class UserCreate(UserBase):
     pass

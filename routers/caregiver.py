@@ -48,6 +48,12 @@ async def create_caregiver(caregiver: CaregiverCreate):
     db = get_db()
     caregiver_dict = caregiver.model_dump(exclude_unset=True)
     result = await db.caregivers.insert_one(caregiver_dict)
+    # Mark the linked user as onBoarded
+    if caregiver.userId:
+        await db.users.update_one(
+            {"_id": ObjectId(caregiver.userId)},
+            {"$set": {"onBoard": True}}
+        )
     return await _get_caregiver_with_elders(db, result.inserted_id)
 
 @router.get("/")

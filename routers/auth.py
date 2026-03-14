@@ -43,7 +43,8 @@ async def google_auth(request: GoogleAuthRequest):
                 "name": name,
                 "email": email,
                 "avatar": picture,
-                "role": request.role
+                "role": request.role,
+                "onBoard": False
             }
             result = await users_collection.insert_one(new_user)
             user = await users_collection.find_one({"_id": result.inserted_id})

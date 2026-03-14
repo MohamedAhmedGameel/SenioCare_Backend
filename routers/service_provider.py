@@ -12,6 +12,12 @@ async def create_service_provider(provider: ServiceProviderCreate):
     db = get_db()
     provider_dict = provider.model_dump(exclude_unset=True)
     result = await db.serviceproviders.insert_one(provider_dict)
+    # Mark the linked user as onBoarded
+    if provider.userId:
+        await db.users.update_one(
+            {"_id": ObjectId(provider.userId)},
+            {"$set": {"onBoard": True}}
+        )
     created = await db.serviceproviders.find_one({"_id": result.inserted_id})
     return map_document(created)
 
