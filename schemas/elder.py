@@ -1,5 +1,5 @@
 from pydantic import BaseModel, Field
-from typing import Optional, List
+from typing import Any, Dict, Optional, List
 from utils.pydantic_utils import PyObjectId
 
 class ElderBase(BaseModel):
@@ -33,3 +33,26 @@ class Elder(ElderBase):
 
     class Config:
         populate_by_name = True
+
+
+class ElderResponse(BaseModel):
+    """Response schema for an elder with caregiver_ids populated as full objects."""
+    id: Optional[str] = None
+    _id: Optional[str] = None
+    userId: Optional[str] = None
+    age: Optional[int] = None
+    weight: Optional[float] = None
+    height: Optional[float] = None
+    gender: Optional[str] = None
+    chronicDiseases: List[str] = []
+    allergies: List[str] = []
+    bloodType: Optional[str] = None
+    mobilityStatus: Optional[str] = None
+    caregiver_ids: List[Dict[str, Any]] = []
+
+    class Config:
+        populate_by_name = True
+
+
+class DeleteResponse(BaseModel):
+    message: str

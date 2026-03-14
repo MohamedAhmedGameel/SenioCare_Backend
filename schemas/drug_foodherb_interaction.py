@@ -39,3 +39,7 @@ class DrugFoodHerbInteraction(DrugFoodHerbInteractionBase):
     class Config:
         populate_by_name = True
         json_encoders = {}
+
+
+class DeleteResponse(BaseModel):
+    message: str

@@ -1,13 +1,13 @@
 from fastapi import APIRouter, HTTPException
-from typing import Optional
+from typing import List, Optional
 from bson import ObjectId
 from database import get_ai_db
-from schemas.drug_information import DrugInformationCreate, DrugInformationUpdate
+from schemas.drug_information import DrugInformationCreate, DrugInformationUpdate, DrugInformation, DeleteResponse
 from utils.pydantic_utils import map_document
 
 router = APIRouter()
 
-@router.post("/", status_code=201)
+@router.post("/", status_code=201, response_model=DrugInformation)
 async def create_drug_information(drug_info: DrugInformationCreate):
     """Create a new drug information record"""
     db = get_ai_db()
@@ -22,7 +22,7 @@ async def create_drug_information(drug_info: DrugInformationCreate):
     created = await db.drug_information.find_one({"_id": result.inserted_id})
     return map_document(created)
 
-@router.get("/")
+@router.get("/", response_model=List[DrugInformation])
 async def list_drug_information(
     drug_name: Optional[str] = None,
     drug_type: Optional[str] = None,
@@ -48,7 +48,7 @@ async def list_drug_information(
     
     return drugs
 
-@router.get("/fhdi/{fhdi_drug_id}")
+@router.get("/fhdi/{fhdi_drug_id}", response_model=DrugInformation)
 async def get_drug_by_fhdi_id(fhdi_drug_id: str):
     """Get a specific drug information record by fhdi_drug_id"""
     db = get_ai_db()
@@ -59,7 +59,7 @@ async def get_drug_by_fhdi_id(fhdi_drug_id: str):
     
     return map_document(drug)
 
-@router.get("/{id}")
+@router.get("/{id}", response_model=DrugInformation)
 async def get_drug_information(id: str):
     """Get a specific drug information record by MongoDB ID"""
     if not ObjectId.is_valid(id):
@@ -73,7 +73,7 @@ async def get_drug_information(id: str):
     
     return map_document(drug)
 
-@router.put("/{id}")
+@router.put("/{id}", response_model=DrugInformation)
 async def update_drug_information(id: str, drug_info: DrugInformationUpdate):
     """Update a drug information record"""
     if not ObjectId.is_valid(id):
@@ -101,7 +101,7 @@ async def update_drug_information(id: str, drug_info: DrugInformationUpdate):
     updated = await db.drug_information.find_one({"_id": ObjectId(id)})
     return map_document(updated)
 
-@router.delete("/{id}")
+@router.delete("/{id}", response_model=DeleteResponse)
 async def delete_drug_information(id: str):
     """Delete a drug information record"""
     if not ObjectId.is_valid(id):

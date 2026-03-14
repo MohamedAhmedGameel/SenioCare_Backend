@@ -2,7 +2,8 @@ from fastapi import APIRouter, HTTPException, Depends, status
 from typing import List, Any
 from bson import ObjectId
 from database import get_db
-from schemas.caregiver import CaregiverCreate, CaregiverUpdate, Caregiver
+from schemas.caregiver import CaregiverCreate, CaregiverUpdate, Caregiver, CaregiverResponse
+from schemas.elder import DeleteResponse
 from utils.pydantic_utils import map_document
 import pymongo
 
@@ -43,7 +44,7 @@ async def _get_caregiver_with_elders(db, caregiver_id: ObjectId):
     return cg
 
 
-@router.post("/", status_code=201)
+@router.post("/", status_code=201, response_model=CaregiverResponse)
 async def create_caregiver(caregiver: CaregiverCreate):
     db = get_db()
     caregiver_dict = caregiver.model_dump(exclude_unset=True)
@@ -56,11 +57,9 @@ async def create_caregiver(caregiver: CaregiverCreate):
         )
     return await _get_caregiver_with_elders(db, result.inserted_id)
 
-@router.get("/")
+@router.get("/", response_model=List[CaregiverResponse])
 async def list_caregivers():
     db = get_db()
-    
-
 
     pipeline = [
         {
@@ -82,14 +81,10 @@ async def list_caregivers():
                 "as": "elder_ids"
             }
         },
-        # Mongoose populate returns the docs. We need to map _id to id for all of them?
-        # The frontend might expect _id or id. Mongoose returns _id usually, unless transformed.
-        # My map_document handles _id -> id and keeps _id.
     ]
     
     caregivers = await db.caregivers.aggregate(pipeline).to_list(length=None)
     
-    # helper to map recursive structures if needed
     for c in caregivers:
         map_document(c)
         if "elder_ids" in c and isinstance(c["elder_ids"], list):
@@ -98,7 +93,7 @@ async def list_caregivers():
                 
     return caregivers
 
-@router.get("/{id}")
+@router.get("/{id}", response_model=CaregiverResponse)
 async def get_caregiver(id: str):
     if not ObjectId.is_valid(id):
         raise HTTPException(status_code=400, detail="Invalid id")
@@ -109,7 +104,7 @@ async def get_caregiver(id: str):
         raise HTTPException(status_code=404, detail="Not found")
     return cg
 
-@router.put("/{id}")
+@router.put("/{id}", response_model=CaregiverResponse)
 async def update_caregiver(id: str, caregiver: CaregiverUpdate):
     if not ObjectId.is_valid(id):
         raise HTTPException(status_code=400, detail="Invalid id")
@@ -127,7 +122,7 @@ async def update_caregiver(id: str, caregiver: CaregiverUpdate):
         
     return await _get_caregiver_with_elders(db, ObjectId(id))
 
-@router.delete("/{id}")
+@router.delete("/{id}", response_model=DeleteResponse)
 async def delete_caregiver(id: str):
     if not ObjectId.is_valid(id):
         raise HTTPException(status_code=400, detail="Invalid id")

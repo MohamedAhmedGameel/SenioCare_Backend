@@ -23,3 +23,7 @@ class ServiceProvider(ServiceProviderBase):
 
     class Config:
         populate_by_name = True
+
+
+class DeleteResponse(BaseModel):
+    message: str

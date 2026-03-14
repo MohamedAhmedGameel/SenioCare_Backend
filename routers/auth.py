@@ -14,7 +14,13 @@ class GoogleAuthRequest(BaseModel):
     idToken: str
     role: str
 
-@router.post("/google")
+class AuthResponse(BaseModel):
+    message: str
+    user: User
+    token: str
+    role: str
+
+@router.post("/google", response_model=AuthResponse)
 async def google_auth(request: GoogleAuthRequest):
     if not GOOGLE_CLIENT_ID:
         raise HTTPException(status_code=500, detail="Server misconfiguration: missing GOOGLE_CLIENT_ID")

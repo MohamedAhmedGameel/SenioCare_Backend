@@ -2,7 +2,7 @@ from fastapi import APIRouter, HTTPException
 from typing import List
 from bson import ObjectId
 from database import get_db
-from schemas.elder import ElderCreate, ElderUpdate
+from schemas.elder import ElderCreate, ElderUpdate, ElderResponse, DeleteResponse
 from utils.pydantic_utils import map_document
 
 router = APIRouter()
@@ -42,7 +42,7 @@ async def _get_elder_with_caregivers(db, elder_id: ObjectId):
     return elder
 
 
-@router.post("/", status_code=201)
+@router.post("/", status_code=201, response_model=ElderResponse)
 async def create_elder(elder: ElderCreate):
     db = get_db()
     elder_dict = elder.model_dump(exclude_unset=True)
@@ -55,7 +55,7 @@ async def create_elder(elder: ElderCreate):
         )
     return await _get_elder_with_caregivers(db, result.inserted_id)
 
-@router.get("/")
+@router.get("/", response_model=List[ElderResponse])
 async def list_elders():
     db = get_db()
 
@@ -90,7 +90,7 @@ async def list_elders():
                 map_document(cg)
     return elders
 
-@router.get("/{id}")
+@router.get("/{id}", response_model=ElderResponse)
 async def get_elder(id: str):
     if not ObjectId.is_valid(id):
         raise HTTPException(status_code=400, detail="Invalid id")
@@ -101,7 +101,7 @@ async def get_elder(id: str):
         raise HTTPException(status_code=404, detail="Not found")
     return elder
 
-@router.put("/{id}")
+@router.put("/{id}", response_model=ElderResponse)
 async def update_elder(id: str, elder: ElderUpdate):
     if not ObjectId.is_valid(id):
         raise HTTPException(status_code=400, detail="Invalid id")
@@ -117,7 +117,7 @@ async def update_elder(id: str, elder: ElderUpdate):
         
     return await _get_elder_with_caregivers(db, ObjectId(id))
 
-@router.delete("/{id}")
+@router.delete("/{id}", response_model=DeleteResponse)
 async def delete_elder(id: str):
     if not ObjectId.is_valid(id):
         raise HTTPException(status_code=400, detail="Invalid id")

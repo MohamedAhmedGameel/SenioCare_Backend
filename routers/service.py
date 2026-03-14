@@ -2,13 +2,13 @@ from fastapi import APIRouter, HTTPException
 from typing import List
 from bson import ObjectId
 from database import get_db
-from schemas.service import ServiceCreate, ServiceUpdate
+from schemas.service import ServiceCreate, ServiceUpdate, Service, DeleteResponse
 from utils.pydantic_utils import map_document
 
 router = APIRouter()
 
 
-@router.post("/", status_code=201)
+@router.post("/", status_code=201, response_model=Service)
 async def create_service(service: ServiceCreate):
     db = get_db()
     service_dict = service.model_dump(exclude_unset=True, by_alias=True)
@@ -17,21 +17,21 @@ async def create_service(service: ServiceCreate):
     return map_document(created)
 
 
-@router.get("/")
+@router.get("/", response_model=List[Service])
 async def list_services():
     db = get_db()
     services = await db.services.find().to_list(length=None)
     return [map_document(s) for s in services]
 
 
-@router.get("/provider/{service_provider_id}")
+@router.get("/provider/{service_provider_id}", response_model=List[Service])
 async def get_services_by_provider(service_provider_id: str):
     db = get_db()
     services = await db.services.find({"service_provider_id": service_provider_id}).to_list(length=None)
     return [map_document(s) for s in services]
 
 
-@router.get("/{id}")
+@router.get("/{id}", response_model=Service)
 async def get_service(id: str):
     if not ObjectId.is_valid(id):
         raise HTTPException(status_code=400, detail="Invalid id")
@@ -44,7 +44,7 @@ async def get_service(id: str):
     return map_document(service)
 
 
-@router.put("/{id}")
+@router.put("/{id}", response_model=Service)
 async def update_service(id: str, service: ServiceUpdate):
     if not ObjectId.is_valid(id):
         raise HTTPException(status_code=400, detail="Invalid id")
@@ -62,7 +62,7 @@ async def update_service(id: str, service: ServiceUpdate):
     return map_document(updated)
 
 
-@router.delete("/{id}")
+@router.delete("/{id}", response_model=DeleteResponse)
 async def delete_service(id: str):
     if not ObjectId.is_valid(id):
         raise HTTPException(status_code=400, detail="Invalid id")

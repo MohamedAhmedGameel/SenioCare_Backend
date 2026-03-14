@@ -1,13 +1,13 @@
 from fastapi import APIRouter, HTTPException
-from typing import Optional
+from typing import List, Optional
 from bson import ObjectId
 from database import get_ai_db
-from schemas.food_information import FoodInformationCreate, FoodInformationUpdate
+from schemas.food_information import FoodInformationCreate, FoodInformationUpdate, FoodInformation, DeleteResponse
 from utils.pydantic_utils import map_document
 
 router = APIRouter()
 
-@router.post("/", status_code=201)
+@router.post("/", status_code=201, response_model=FoodInformation)
 async def create_food_information(food_info: FoodInformationCreate):
     """Create a new food information record"""
     db = get_ai_db()
@@ -22,7 +22,7 @@ async def create_food_information(food_info: FoodInformationCreate):
     created = await db.food_information.find_one({"_id": result.inserted_id})
     return map_document(created)
 
-@router.get("/")
+@router.get("/", response_model=List[FoodInformation])
 async def list_food_information(
     food_name: Optional[str] = None,
     group: Optional[str] = None,
@@ -51,7 +51,7 @@ async def list_food_information(
     
     return foods
 
-@router.get("/fhdi/{fhdi_food_id}")
+@router.get("/fhdi/{fhdi_food_id}", response_model=FoodInformation)
 async def get_food_by_fhdi_id(fhdi_food_id: str):
     """Get a specific food information record by fhdi_food_id"""
     db = get_ai_db()
@@ -62,7 +62,7 @@ async def get_food_by_fhdi_id(fhdi_food_id: str):
     
     return map_document(food)
 
-@router.get("/{id}")
+@router.get("/{id}", response_model=FoodInformation)
 async def get_food_information(id: str):
     """Get a specific food information record by MongoDB ID"""
     if not ObjectId.is_valid(id):
@@ -71,15 +71,12 @@ async def get_food_information(id: str):
     db = get_ai_db()
     food = await db.food_information.find_one({"_id": ObjectId(id)})
     
-    if not drug: # Small typo fix from previous version: should be food
-        pass
-    
     if not food:
         raise HTTPException(status_code=404, detail="Not found")
     
     return map_document(food)
 
-@router.put("/{id}")
+@router.put("/{id}", response_model=FoodInformation)
 async def update_food_information(id: str, food_info: FoodInformationUpdate):
     """Update a food information record"""
     if not ObjectId.is_valid(id):
@@ -106,7 +103,7 @@ async def update_food_information(id: str, food_info: FoodInformationUpdate):
     updated = await db.food_information.find_one({"_id": ObjectId(id)})
     return map_document(updated)
 
-@router.delete("/{id}")
+@router.delete("/{id}", response_model=DeleteResponse)
 async def delete_food_information(id: str):
     """Delete a food information record"""
     if not ObjectId.is_valid(id):

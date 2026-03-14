@@ -2,12 +2,12 @@ from fastapi import APIRouter, HTTPException
 from typing import List, Optional
 from bson import ObjectId
 from database import get_ai_db
-from schemas.disease_information import DiseaseInformationCreate, DiseaseInformationUpdate
+from schemas.disease_information import DiseaseInformationCreate, DiseaseInformationUpdate, DiseaseInformation, DeleteResponse
 from utils.pydantic_utils import map_document
 
 router = APIRouter()
 
-@router.post("/", status_code=201)
+@router.post("/", status_code=201, response_model=DiseaseInformation)
 async def create_disease_information(disease_info: DiseaseInformationCreate):
     """Create a new disease information record"""
     db = get_ai_db()
@@ -16,7 +16,7 @@ async def create_disease_information(disease_info: DiseaseInformationCreate):
     created = await db.disease_information.find_one({"_id": result.inserted_id})
     return map_document(created)
 
-@router.get("/")
+@router.get("/", response_model=List[DiseaseInformation])
 async def list_disease_information(
     fhdi_drug_id: Optional[str] = None,
     indication: Optional[str] = None,
@@ -66,7 +66,7 @@ async def list_disease_information(
     
     return diseases
 
-@router.get("/{id}")
+@router.get("/{id}", response_model=DiseaseInformation)
 async def get_disease_information(id: str):
     """Get a specific disease information record by ID"""
     if not ObjectId.is_valid(id):
@@ -104,7 +104,7 @@ async def get_disease_information(id: str):
     
     return disease
 
-@router.put("/{id}")
+@router.put("/{id}", response_model=DiseaseInformation)
 async def update_disease_information(id: str, disease_info: DiseaseInformationUpdate):
     """Update a disease information record"""
     if not ObjectId.is_valid(id):
@@ -122,7 +122,7 @@ async def update_disease_information(id: str, disease_info: DiseaseInformationUp
     updated = await db.disease_information.find_one({"_id": ObjectId(id)})
     return map_document(updated)
 
-@router.delete("/{id}")
+@router.delete("/{id}", response_model=DeleteResponse)
 async def delete_disease_information(id: str):
     """Delete a disease information record"""
     if not ObjectId.is_valid(id):

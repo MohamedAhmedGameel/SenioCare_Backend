@@ -1,13 +1,13 @@
 from fastapi import APIRouter, HTTPException
-from typing import Optional
+from typing import Any, Dict, List, Optional
 from bson import ObjectId
 from database import get_ai_db
-from schemas.drug_foodherb_interaction import DrugFoodHerbInteractionCreate, DrugFoodHerbInteractionUpdate
+from schemas.drug_foodherb_interaction import DrugFoodHerbInteractionCreate, DrugFoodHerbInteractionUpdate, DrugFoodHerbInteraction, DeleteResponse
 from utils.pydantic_utils import map_document
 
 router = APIRouter()
 
-@router.post("/", status_code=201)
+@router.post("/", status_code=201, response_model=DrugFoodHerbInteraction)
 async def create_interaction(interaction: DrugFoodHerbInteractionCreate):
     """Create a new drug-food/herb interaction record"""
     db = get_ai_db()
@@ -16,7 +16,7 @@ async def create_interaction(interaction: DrugFoodHerbInteractionCreate):
     created = await db.drug_foodherb_interaction.find_one({"_id": result.inserted_id})
     return map_document(created)
 
-@router.get("/")
+@router.get("/", response_model=List[Dict[str, Any]])
 async def list_interactions(
     fhdi_drug_id: Optional[str] = None,
     food_herb_id: Optional[str] = None,
@@ -127,7 +127,7 @@ async def list_interactions(
     
     return interactions
 
-@router.get("/{id}")
+@router.get("/{id}", response_model=Dict[str, Any])
 async def get_interaction(id: str):
     """Get a specific drug-food/herb interaction record by ID"""
     if not ObjectId.is_valid(id):
@@ -225,7 +225,7 @@ async def get_interaction(id: str):
     
     return interaction
 
-@router.put("/{id}")
+@router.put("/{id}", response_model=DrugFoodHerbInteraction)
 async def update_interaction(id: str, interaction: DrugFoodHerbInteractionUpdate):
     """Update a drug-food/herb interaction record"""
     if not ObjectId.is_valid(id):
@@ -243,7 +243,7 @@ async def update_interaction(id: str, interaction: DrugFoodHerbInteractionUpdate
     updated = await db.drug_foodherb_interaction.find_one({"_id": ObjectId(id)})
     return map_document(updated)
 
-@router.delete("/{id}")
+@router.delete("/{id}", response_model=DeleteResponse)
 async def delete_interaction(id: str):
     """Delete a drug-food/herb interaction record"""
     if not ObjectId.is_valid(id):

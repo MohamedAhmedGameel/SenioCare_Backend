@@ -1,5 +1,5 @@
 from pydantic import BaseModel, Field
-from typing import Optional, List, Literal
+from typing import Any, Dict, Optional, List, Literal
 from utils.pydantic_utils import PyObjectId
 
 class CaregiverBase(BaseModel):
@@ -20,11 +20,20 @@ class CaregiverUpdate(BaseModel):
 
 class Caregiver(CaregiverBase):
     id: Optional[PyObjectId] = Field(alias="_id", default=None)
-    
-    # For population, we might want a separate schema or nested model, 
-    # but for now we keep the structure generic to allow either ID or object if populated manually
-    # However, strictly typing it as List[Any] or List[Elder] is complex with circular deps.
-    # We will handle population in the router response construction.
+
+    class Config:
+        populate_by_name = True
+
+
+class CaregiverResponse(BaseModel):
+    """Response schema for a caregiver with elder_ids populated as full objects."""
+    id: Optional[str] = None
+    _id: Optional[str] = None
+    userId: Optional[str] = None
+    phone_number: Optional[str] = None
+    gender: Optional[str] = None
+    relationship: Optional[str] = None
+    elder_ids: List[Dict[str, Any]] = []
 
     class Config:
         populate_by_name = True

@@ -1,13 +1,13 @@
 from fastapi import APIRouter, HTTPException
-from typing import Optional
+from typing import List, Optional
 from bson import ObjectId
 from database import get_ai_db
-from schemas.herb_information import HerbInformationCreate, HerbInformationUpdate
+from schemas.herb_information import HerbInformationCreate, HerbInformationUpdate, HerbInformation, DeleteResponse
 from utils.pydantic_utils import map_document
 
 router = APIRouter()
 
-@router.post("/", status_code=201)
+@router.post("/", status_code=201, response_model=HerbInformation)
 async def create_herb_information(herb_info: HerbInformationCreate):
     """Create a new herb information record"""
     db = get_ai_db()
@@ -22,7 +22,7 @@ async def create_herb_information(herb_info: HerbInformationCreate):
     created = await db.herb_information.find_one({"_id": result.inserted_id})
     return map_document(created)
 
-@router.get("/")
+@router.get("/", response_model=List[HerbInformation])
 async def list_herb_information(
     herb_english_name: Optional[str] = None,
     therapeutic_class: Optional[str] = None,
@@ -48,7 +48,7 @@ async def list_herb_information(
     
     return herbs
 
-@router.get("/fhdi/{fhdi_herb_id}")
+@router.get("/fhdi/{fhdi_herb_id}", response_model=HerbInformation)
 async def get_herb_by_fhdi_id(fhdi_herb_id: str):
     """Get a specific herb information record by fhdi_herb_id"""
     db = get_ai_db()
@@ -59,7 +59,7 @@ async def get_herb_by_fhdi_id(fhdi_herb_id: str):
     
     return map_document(herb)
 
-@router.get("/{id}")
+@router.get("/{id}", response_model=HerbInformation)
 async def get_herb_information(id: str):
     """Get a specific herb information record by MongoDB ID"""
     if not ObjectId.is_valid(id):
@@ -73,7 +73,7 @@ async def get_herb_information(id: str):
     
     return map_document(herb)
 
-@router.put("/{id}")
+@router.put("/{id}", response_model=HerbInformation)
 async def update_herb_information(id: str, herb_info: HerbInformationUpdate):
     """Update a herb information record"""
     if not ObjectId.is_valid(id):
@@ -101,7 +101,7 @@ async def update_herb_information(id: str, herb_info: HerbInformationUpdate):
     updated = await db.herb_information.find_one({"_id": ObjectId(id)})
     return map_document(updated)
 
-@router.delete("/{id}")
+@router.delete("/{id}", response_model=DeleteResponse)
 async def delete_herb_information(id: str):
     """Delete a herb information record"""
     if not ObjectId.is_valid(id):
