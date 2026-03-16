@@ -1,5 +1,6 @@
 from fastapi import APIRouter, HTTPException, BackgroundTasks
 from pydantic import BaseModel
+from typing import Any
 from google.oauth2 import id_token
 from google.auth.transport import requests
 import jwt
@@ -14,11 +15,43 @@ class GoogleAuthRequest(BaseModel):
     idToken: str
     role: str
 
+from typing import Any, Dict, Optional
+
 class AuthResponse(BaseModel):
     message: str
     user: User
     token: str
     role: str
+    profile: Optional[Dict[str, Any]] = None
+
+    class Config:
+        json_schema_extra = {
+            "example": {
+                "message": "Authenticated",
+                "user": {
+                    "id": "65123...",
+                    "googleId": "12345...",
+                    "name": "John Doe",
+                    "email": "john.doe@example.com",
+                    "avatar": "https://example.com/avatar.jpg",
+                    "role": "elder",
+                    "onBoard": True
+                },
+                "token": "eyJhbGciOi...",
+                "role": "elder",
+                "profile": {
+                    "id": "65f12...",
+                    "userId": "65123...",
+                    "age": 70,
+                    "gender": "male",
+                    "chronicDiseases": ["Diabetes"],
+                    "allergies": [],
+                    "caregiver_ids": [],
+                    "bloodType": "O+",
+                    "mobilityStatus": "independent"
+                }
+            }
+        }
 
 @router.post("/google", response_model=AuthResponse)
 async def google_auth(request: GoogleAuthRequest):
@@ -67,11 +100,29 @@ async def google_auth(request: GoogleAuthRequest):
         
         token = jwt.encode(payload, JWT_SECRET, algorithm="HS256")
         
+        profile = None
+        if user.get("onBoard"):
+            role_str = user.get("role")
+            user_id_str = str(user["_id"])
+            if role_str == "elder":
+                profile_doc = await db.elders.find_one({"userId": user_id_str})
+                if profile_doc:
+                    profile = map_document(profile_doc)
+            elif role_str == "caregiver":
+                profile_doc = await db.caregivers.find_one({"userId": user_id_str})
+                if profile_doc:
+                    profile = map_document(profile_doc)
+            elif role_str in ["serviceProvider"]:
+                profile_doc = await db.serviceproviders.find_one({"userId": user_id_str})
+                if profile_doc:
+                    profile = map_document(profile_doc)
+        
         return {
             "message": "Authenticated",
             "user": map_document(user),
             "token": token,
-            "role": user.get("role") # Original returns role from request or user? Original returns `role` variable which was from req.body
+            "role": user.get("role"),
+            "profile": profile
         }
         
     except ValueError as e:
