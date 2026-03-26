@@ -1,8 +1,9 @@
 from fastapi import APIRouter, HTTPException, Query
 from typing import List, Optional
+from datetime import date
 from bson import ObjectId
 from database import get_db
-from schemas.daily_medicine import DailyMedicineCreate, DailyMedicineUpdate, DailyMedicine, DeleteResponse
+from schemas.daily_medicine import DailyMedicineCreate, DailyMedicineUpdate, DailyMedicine, DailyMedicineSchedule, DeleteResponse
 from utils.pydantic_utils import map_document
 
 router = APIRouter()
@@ -24,18 +25,56 @@ async def list_daily_medicines():
     return [map_document(m) for m in medicines]
 
 
-@router.get("/elder/{elder_id}", response_model=List[DailyMedicine])
+@router.get("/elder/{elder_id}", response_model=List[DailyMedicineSchedule])
 async def get_daily_medicines_by_elder(
     elder_id: str,
-    date: Optional[str] = Query(None, description="Filter by date (YYYY-MM-DD)")
+    target_date: Optional[str] = Query(
+        None,
+        alias="date",
+        description="Date to check (YYYY-MM-DD). Defaults to today."
+    )
 ):
+    """
+    Return all medicines for an elder that are active on the given date.
+    Each time slot becomes a separate object with a 'date' field
+    combining the query date and that time (e.g. "2026-03-26 08:00").
+    Results are sorted chronologically by the date field.
+    """
     db = get_db()
-    query = {"elder_id": elder_id}
-    if date:
-        query["date"] = date
-        
+
+    if not target_date:
+        target_date = date.today().isoformat()
+
+    query = {
+        "elder_id": elder_id,
+        "start_date": {"$lte": target_date},
+        "end_date": {"$gte": target_date},
+    }
+
     medicines = await db.daily_medicines.find(query).to_list(length=None)
-    return [map_document(m) for m in medicines]
+
+    # Expand each medicine into one entry per time slot
+    result = []
+    for med in medicines:
+        doc = map_document(med)
+        times_list = doc.get("times", []) or []
+        for t in times_list:
+            entry = {
+                "_id": doc.get("_id"),
+                "elder_id": doc.get("elder_id"),
+                "medicine_name": doc.get("medicine_name"),
+                "dosage": doc.get("dosage"),
+                "medicine_type": doc.get("medicine_type"),
+                "date": f"{target_date} {t}",
+                "notes": doc.get("notes"),
+                "state": doc.get("state"),
+            }
+            result.append(entry)
+
+    # Sort by the date+time field
+    result.sort(key=lambda x: x.get("date", ""))
+
+    return result
 
 
 @router.get("/{id}", response_model=DailyMedicine)
