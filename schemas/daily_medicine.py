@@ -12,7 +12,6 @@ class DailyMedicineBase(BaseModel):
     start_date: Optional[str] = None
     end_date: Optional[str] = None
     notes: Optional[str] = None
-    state: Optional[str] = None
 
 
 class DailyMedicineCreate(DailyMedicineBase):
@@ -28,7 +27,6 @@ class DailyMedicineUpdate(BaseModel):
     start_date: Optional[str] = None
     end_date: Optional[str] = None
     notes: Optional[str] = None
-    state: Optional[str] = None
 
 
 class DailyMedicine(DailyMedicineBase):
@@ -46,10 +44,16 @@ class DailyMedicineSchedule(BaseModel):
     medicine_type: Optional[str] = None
     date: Optional[str] = None
     notes: Optional[str] = None
-    state: Optional[str] = None
+    state: Optional[str] = "pending"
 
     class Config:
         populate_by_name = True
+
+
+class MedicineLogCreate(BaseModel):
+    date: str
+    time: str
+    state: str
 
 
 class DeleteResponse(BaseModel):
