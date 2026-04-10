@@ -4,12 +4,15 @@ from typing import Any
 from google.oauth2 import id_token
 from google.auth.transport import requests
 import jwt
+import httpx
 from config import GOOGLE_CLIENT_ID, JWT_SECRET
 from database import get_db
 from schemas.user import UserCreate, User
 from utils.pydantic_utils import map_document
 
 router = APIRouter()
+
+SET_USER_PROFILE_URL = "https://senio-care--ayasserhashem.replit.app/set-user-profile"
 
 class GoogleAuthRequest(BaseModel):
     idToken: str
@@ -87,8 +90,20 @@ async def google_auth(request: GoogleAuthRequest):
             }
             result = await users_collection.insert_one(new_user)
             user = await users_collection.find_one({"_id": result.inserted_id})
+            
+            # 4. Set user profile on external service
+            user_id_str = str(result.inserted_id)
+            try:
+                async with httpx.AsyncClient() as client:
+                    profile_response = await client.post(
+                        f"{SET_USER_PROFILE_URL}/{user_id_str}",
+                        timeout=30.0
+                    )
+                    print(f"Set user profile response for {user_id_str}: {profile_response.status_code}")
+            except Exception as profile_error:
+                print(f"Failed to set user profile for {user_id_str}: {str(profile_error)}")
         
-        # 4. Generate JWT
+        # 5. Generate JWT
         # Original code used: { id: user._id, email: user.email, role: user.role }
         # Note: PyJWT encode returns a string in Python 3, but in old versions bytes.
         
