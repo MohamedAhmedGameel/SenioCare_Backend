@@ -1,17 +1,23 @@
+import asyncio
 from fastapi import FastAPI, Depends
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import HTMLResponse
 from contextlib import asynccontextmanager
 from database import connect_db, close_db, connect_ai_db, close_ai_db
-from routers import auth, caregiver, elder, service_provider, disease_information, drug_information, food_information, herb_information, drug_foodherb_interaction, medical_document, service, medicine, daily_medicine
+from routers import auth, caregiver, elder, service_provider, disease_information, drug_information, food_information, herb_information, drug_foodherb_interaction, medical_document, service, medicine, daily_medicine, notification, user
 from dependencies import get_current_user
+from utils.firebase import init_firebase
+from utils.notification_cron import notification_cron_job
 import config
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     await connect_db()
     await connect_ai_db()
+    init_firebase()
+    cron_task = asyncio.create_task(notification_cron_job())
     yield
+    cron_task.cancel()
     await close_db()
     await close_ai_db()
 
@@ -106,7 +112,18 @@ app.include_router(
     tags=["DDID - Drug-Food/Herb Interactions"], 
     dependencies=[Depends(get_current_user)]
 )
-
+app.include_router(
+    notification.router,
+    prefix="/notifications",
+    tags=["Notifications"],
+    dependencies=[Depends(get_current_user)]
+)
+app.include_router(
+    user.router,
+    prefix="/users",
+    tags=["Users"],
+    dependencies=[Depends(get_current_user)]
+)
 
 @app.get("/", response_class=HTMLResponse)
 async def read_root():

@@ -97,7 +97,7 @@ async def google_auth(request: GoogleAuthRequest):
                 async with httpx.AsyncClient() as client:
                     profile_response = await client.post(
                         f"{SET_USER_PROFILE_URL}/{user_id_str}",
-                        timeout=30.0
+                        timeout=30000.0
                     )
                     print(f"Set user profile response for {user_id_str}: {profile_response.status_code}")
             except Exception as profile_error:

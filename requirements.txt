@@ -8,3 +8,4 @@ pyjwt
 google-auth
 requests
 httpx
+firebase-admin
