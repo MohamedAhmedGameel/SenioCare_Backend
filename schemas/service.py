@@ -40,6 +40,7 @@ class ServiceUpdate(BaseModel):
 
 class Service(ServiceBase):
     id: Optional[PyObjectId] = Field(alias="_id", default=None)
+    user_id: Optional[str] = None
 
     class Config:
         populate_by_name = True
