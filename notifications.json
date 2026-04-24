@@ -1,0 +1,13 @@
+{
+    "type": "service_account",
+    "project_id": "senio-care",
+    "private_key_id": "325d69f590abaaab8028a4eaed23962609b17d6c",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCqxMQ+EhisuZNm\nf5B/dOjj6Md+KnW1B6hmfCbWaN5yEaOYscV6+AaGHJj4pZAWPVARcXb+idBvoGBS\niJZ1WDdFPzhPhtjbcYowGsZ+FXX6V3dB00CdylyATe490Aw9dGgEyKlWlD7FTP1C\nXlHhQBxw8hBBrZ+fKArLefF8xUaTIk+aQKLBz8zG3wwcYEI9ZwHpd6G3zUhMB1YL\nCRoAUf6g8AK/ckvYlv8Zy4nkc2WV7XtP8646B59e13x6C0KMvpZNdrwLXPxxEUZI\nZK7K3q1aNQX/cuYYesO0mvPPZf8NccXGVtiQuROMz48KYeIgBAHvGZrsAqt15MBQ\nxy2/qhrFAgMBAAECggEADOPreE//YtJjSQJqEuTtS37fyCtGVVLtqEbI27hwyiWA\ntt78bCrauzbfaS1+Md+Q8rAg7lfSzwpJGxHKYbM2ANkj1AT2y6HHb5gl0ZCnJi2C\nCAr9PqvuzZSUXkAdHGp0C6Bl/+4Syuvj1iWugpVHUFNFXN/RQ79PCUr8KpHtoN9/\nlnmjGpxGy2Xd3dqWwV777l9P5P9uiTHbKw6uEDXhONsLEq6hCR2bzN9N896Abz+Q\nrEALzKcLL4M5wRqqvn1GAhp6FsyHjKXudH00jym4e991Bx6gpQBRUZfQwn/QErGh\nOczrRQeLONwgmlqGCiThlqyLTpWWp4fbRkyhQn9HAQKBgQDVFuOikUwIN8bT1ng2\nzIkJ/F5eEb5EnuREWqKpumMjF8KOWDxBNXOK6taAU+T4AnuEMSNHUX6t+v0RoPni\nqkBK7ortvHNPU84VbaDXA1TwGh8msD/9qu/6ASjAyF9/zlVgbnBhEQrEukNDV+rZ\nH7Vw2+1YJSRgPTs8IJV6EtpnQQKBgQDNKCu0x3IMgZsUAwYUPX6HTYudXVXHW1qg\n1HoLhkJouDQHzBWcHZgMMhvBG5THAqcdecAzvqBx9NTQkYeTeE3vf2TjM0x/doD5\nJr/bEoHXCsmZoEFBJOOfok91MpFpiaTppGCJt4b3S3ddhoYgGSZ5tSORbY5HOwQj\nW9K24Hr2hQKBgQDDcMv2FgfDXc0KDKKTuENUmli/NMzrSUSaAPtCawZ0cF1sizcw\no+LGnh+A8fGHG1fIZf0yc2eaESM9oQSwRXDUiTd5Vyf3sSjKdJNZwd+MnJjHtk3q\nznZuOdP0BZO5uDiMSp7eGHBlAWWiBagL3s5epghpmR9k+aQzwLr4jQQuQQKBgQC1\nKMbHYOL91iipmC3zC4ZCViB1+ig33Rx/LoEC0jCsJhST2gwvChbslgbaE8/hmB8X\nsR4e0zL8zdRqxEdy2mX/mX/t/KuNVoh2+leqTIJo8LaquM9GhhuWKA6AEAJFrmz4\nf9VbZruAfZxO8u5XQ74s9N4Omi5sCdoSmw/Luxf5vQKBgHN70wDXvNdm7n3cx79K\n3TM9bESAUzkY4WiwGfQD5bUzVzhLVw/QlOfCoJHrnmxNWkgQKFDnHn44BRRsdXIm\nwSSjWiDxCVX0R79Tcz/ZTFQZc7IihoCOz0Jd2oLkSEa9if9MOSvedesjlq0604IH\n44RjvOBQYUxNQvzFxmV1eJZq\n-----END PRIVATE KEY-----\n",
+    "client_email": "firebase-adminsdk-fbsvc@senio-care.iam.gserviceaccount.com",
+    "client_id": "105750267233675098661",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-fbsvc%40senio-care.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+}
