@@ -112,12 +112,12 @@ app.include_router(
     tags=["DDID - Drug-Food/Herb Interactions"], 
     dependencies=[Depends(get_current_user)]
 )
-app.include_router(
-    notification.router,
-    prefix="/notifications",
-    tags=["Notifications"],
-    dependencies=[Depends(get_current_user)]
-)
+# app.include_router(
+#     notification.router,
+#     prefix="/notifications",
+#     tags=["Notifications"],
+#     dependencies=[Depends(get_current_user)]
+# )
 app.include_router(
     user.router,
     prefix="/users",
